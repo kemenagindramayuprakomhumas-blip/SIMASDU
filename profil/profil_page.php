@@ -1,0 +1,680 @@
+<?php
+// Plain PHP version converted from Laravel Blade (no framework dependencies)
+?><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portal resmi Kementerian Agama Kabupaten Indramayu">
+    <meta name="author" content="Kemenag Indramayu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="data:,">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Central Website KEMENTERIAN AGAMA KABUPATEN INDRAMAYU</title>
+
+    <!-- Bootstrap core CSS (local) -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/css/all.css">
+    <link rel="stylesheet" href="../assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="../assets/css/animated.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+
+    <style>
+      .floating-btn {
+        position: fixed;
+        bottom: 30px;   /* tidak terlalu mepet ke bawah */
+        right: 30px;    /* tidak terlalu mepet ke kanan */
+        z-index: 9999;  /* tampil di atas elemen lain */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .floating-btn img {
+        width: 110px;       /* ukuran tombol */
+        height: auto;
+      }
+
+      .floating-btn:hover {
+        transform: scale(1.08);
+      }
+
+      @media (max-width: 768px) {
+        .floating-btn {
+          bottom: 20px;
+          right: 20px;
+        }
+        .floating-btn img {
+          width: 70px;
+        }
+      }
+
+      .misi-list {
+        margin-top: 10px;
+        padding-left: 0;
+      }
+      .misi-list li {
+        list-style: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 17px;
+        font-weight: 600;
+        color: #2a2a2a;
+        line-height: 1.9;
+        margin-bottom: 6px;
+        position: relative;
+        padding-left: 24px; /* jarak kiri agar bullet sejajar */
+      }
+      .misi-list li::before {
+        content: "•";
+        color: #124b2b; /* hijau khas Kemenag */
+        font-weight: 900;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    </style>
+
+  </head>
+  
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="sigap_page.php" class="logo d-flex align-items-center" style="gap: 12px; padding: 20px 0;">
+              <img src="../assets/images/logo.png" alt="Kemenag Logo" style="height: 50px; width: auto;">
+              <div style="line-height: 1.2; color: #064e3b; font-weight: bold; text-align: left;">
+                <div style="font-size: 16px;">KEMENTERIAN AGAMA</div>
+                <div style="font-size: 16px;">KABUPATEN INDRAMAYU</div>
+              </div>
+            </a>
+            <!-- ***** Logo End ***** -->
+
+            <!-- ***** Menu Start ***** -->
+
+            
+            <ul class="nav" >
+              <li><a href="../sigap/sigap_page.php">Halaman SIGAP</a></li>
+              <li><a href="../index.php">Home</a></li>
+              
+              <li class="dropdown">
+                <a href="#Informasi" class="dropbtn">Informasi Kemenag <i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown-content">
+                  <li><a href="../profil/profil_page.php">Profil, Visi & Misi</a></li>
+                  <li><a href="../organisasi/organisasi_page.php">Struktur Organisasi</a></li>
+                  <li><a href="../informasiKUA/informasiKUA_page.php">Informasi KUA</a></li>
+                  <li><a href="../informasiWakaf/informasiWakaf_page.php">Informasi Wakaf</a></li>
+                  <li><a href="../informasiMadrasah/informasiMadrasah_page.php">Informasi Madrasah</a></li>
+                  <li></li>
+                  <li><a href="../informasiPonpes/informasiPonpes_page.php">Informasi Ponpes</a></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>
+                <!-- <div class="gradient-button">
+                  <a id="modal_trigger" href="#modal">
+                    <i class="fa fa-sign-in-alt"></i> Sign In Now
+                  </a>
+                </div> -->
+              </li>
+            </ul>
+
+
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+<div class="sigap-banner wow fadeIn" id="profil" data-wow-duration="1s" data-wow-delay="0.5s">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Maskot kiri -->
+      <div class="col-lg-6">
+        <div class="right-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+          <img src="../assets/images/slider-dec.png"
+               alt="Maskot SIGAP"
+               style=" width:75%; height:auto; display:flex; margin:0 auto;">
+        </div>
+      </div>
+
+      <!-- Teks kanan -->
+      <div class="col-lg-6 align-self-center">
+        <div class="left-content show-up header-text wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+          <h2 style="font-family: 'Calistoga', serif; color:#124b2b; font-weight:800; margin-bottom:5px;">
+            PROFIL
+          </h2>
+          <h5 style="font-family: 'Calistoga', serif; color:#198754; font-weight:600; margin-bottom:20px;">
+            Kantor Kementerian Agama Kabupaten Indramayu
+          </h5>
+
+          <!-- Kartu alamat -->
+          <div style="
+            background-color: rgba(255,255,255,0.92);
+            padding: 25px 30px;
+            border-radius: 16px;
+            max-width: 480px;
+            margin: 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            font-family: 'Poppins', sans-serif;
+          ">
+            <div style="font-weight:700; color:#124b2b; font-size:18px; margin-bottom:10px;">
+              Alamat Kantor
+            </div>
+            <p style="margin:0 0 6px 0; color:#2a2a2a; font-size:16px; font-weight:500;">
+              Jalan Olahraga No. 03, Indramayu
+            </p>
+            <p style="margin:0; color:#198754; font-size:16px; font-weight:700;">
+              No Telp : (0234) 272033
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BAGIAN VISI (versi terbalik: teks kiri, gambar kanan) -->
+<div class="sigap-banner wow fadeIn is-reversed" id="visi" data-wow-duration="1s" data-wow-delay="0.5s">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- TEKS KIRI -->
+      <div class="col-lg-6 align-self-center" style="margin: 40px 0px;">
+        <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+
+          <h2 style="font-family:'Calistoga',serif; color:#124b2b; font-weight:800; margin-bottom:15px;">
+            Visi
+          </h2>
+          <h5 style="font-family:'Calistoga',serif; color:#198754; font-weight:600; margin-bottom:20px;">
+            Kementerian Agama Republik Indonesia
+          </h5>
+
+          <!-- Card deskripsi visi -->
+          <div style="
+            background-color: rgba(255,255,255,0.92);
+            padding: 25px 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            font-family: 'Poppins', sans-serif;
+            max-width: 520px;
+          ">
+            <p style="font-size:17px; font-weight:600; color:#2a2a2a; line-height:1.8; margin:0;">
+              Kementerian Agama yang profesional dan andal dalam membangun masyarakat yang saleh, moderat,
+              cerdas dan unggul untuk mewujudkan Indonesia maju yang berdaulat, mandiri, dan berkepribadian
+              berdasarkan gotong royong.
+            </p>
+            <span style="display:flex; margin-top:10px; font-weight:700; color:#124b2b;">
+              (Peraturan Menteri Agama Nomor 18 Tahun 2020)
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- GAMBAR KANAN -->
+      <div class="col-lg-6">
+        <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+          <img src="../assets/images/visimisi_image.png"
+               alt="Ilustrasi Visi Kemenag"
+               style="width:75%; height:auto; display:flex; margin:0 auto;">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- BAGIAN MISI DENGAN BULLET MANUAL -->
+<div class="sigap-banner wow fadeIn" id="misi" data-wow-duration="1s" data-wow-delay="0.5s">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Gambar kiri -->
+      <div class="col-lg-6">
+        <div class="right-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+          <img src="../assets/images/hormat-image.png" alt="Gedung Kemenag"
+               style="width:90%; height:auto; display:flex; margin:0 auto;">
+        </div>
+      </div>
+
+      <!-- Teks kanan -->
+      <div class="col-lg-6 align-self-center">
+        <div class="left-content show-up header-text wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+
+          <h2 style="font-family:'Calistoga',serif; color:#124b2b; font-weight:800; margin-bottom:5px;">MISI</h2>
+          <h5 style="font-family:'Calistoga',serif; color:#198754; font-weight:600; margin-bottom:20px;">
+            Kementerian Agama Republik Indonesia
+          </h5>
+
+          <!-- Kartu daftar misi -->
+          <div style="
+            background-color: rgba(255,255,255,0.92);
+            padding: 25px 30px;
+            border-radius: 16px;
+            max-width: 520px;
+            margin: 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            font-family: 'Poppins', sans-serif;
+          ">
+            <div class="fungsi-list">
+              <div class="fungsi-item"><span style="color:#198754;">&#9679;</span> <span class="text">Meningkatkan kualitas kesalehan umat beragama</span></div>
+              <div class="fungsi-item"><span style="color:#198754;">&#9679;</span> <span class="text">Memperkuat Moderasi Beragama dan Kerukunan Umat Beragama;</span></div>
+              <div class="fungsi-item"><span style="color:#198754;">&#9679;</span> <span class="text">Meningkatkan layanan keagamaan yang adil, mudah, dan merata;</span></div>
+              <div class="fungsi-item"><span style="color:#198754;">&#9679;</span> <span class="text">Meningkatkan layanan pendidikan yang merata dan bermutu;</span></div>
+              <div class="fungsi-item"><span style="color:#198754;">&#9679;</span> <span class="text">Meningkatkan produktivitas dan daya saing pendidikan;</span></div>
+              <div class="fungsi-item"><span style="color:#198754;">&#9679;</span> <span class="text">Memantapkan tata kelola pemerintahan yang baik (Good Governance).</span></div>
+            </div>            
+
+            <div style="margin-top:12px; font-weight:700; color:#124b2b; font-size:14px;">
+              (Peraturan Menteri Agama Nomor 18 Tahun 2020)
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- BAGIAN TUGAS DAN FUNGSI -->
+<div class="sigap-banner wow fadeIn" id="tugas-fungsi" data-wow-duration="1s" data-wow-delay="0.5s" style="padding: 100px 100px 150px 100px;">
+  <div class="container text-center">
+
+    <!-- JUDUL UTAMA -->
+    <h2 style="font-family:'Calistoga',serif; color:#124b2b; font-weight:800; margin-bottom:5px;">
+      TUGAS DAN FUNGSI
+    </h2>
+
+    <!-- GAMBAR DI TENGAH -->
+    <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" style="margin-bottom:30px;">
+      <img src="../assets/images/hormat-image.png" alt="Ilustrasi Tugas dan Fungsi"
+           style="width:60%; height:auto; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1); margin:25px">
+    </div>
+
+    <!-- BAGIAN TUGAS -->
+    <div class="tugas-card" style="
+      background-color: rgba(255,255,255,0.92);
+      padding: 30px 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      margin-bottom: 35px;
+      max-width: 800px;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:left;
+      font-family:'Poppins',sans-serif;
+    ">
+      <h3 style="font-family:'Calistoga',serif; color:#124b2b; font-weight:700; margin-bottom:10px;">Tugas</h3>
+      <h5 style="color:#198754; font-weight:600; margin-bottom:15px; font-size:15px;">
+        (Peraturan Menteri Agama Nomor 19 Tahun 2019)
+      </h5>
+      <p style="font-size:16px; color:#2a2a2a; font-weight:600; line-height:1.8; margin:0;">
+        “Melaksanakan tugas dan fungsi Kementerian Agama dalam wilayah kabupaten/kota berdasarkan kebijakan 
+        Kepala Kantor Wilayah Kementerian Agama provinsi dan ketentuan peraturan perundang-undangan.”
+      </p>
+    </div>
+
+    <!-- BAGIAN FUNGSI -->
+    <div class="fungsi-card" style="
+      background-color: rgba(255,255,255,0.92);
+      padding: 30px 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      max-width: 800px;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:left;
+      font-family:'Poppins',sans-serif;
+    ">
+      <h3 style="font-family:'Calistoga',serif; color:#124b2b; font-weight:700; margin-bottom:10px;">Fungsi</h3>
+      <h5 style="color:#198754; font-weight:600; margin-bottom:15px; font-size:15px;">
+        (Peraturan Menteri Agama Nomor 19 Tahun 2019)
+      </h5>
+
+      <!-- daftar fungsi rapi -->
+      <div class="fungsi-list">
+        <div class="fungsi-item"><span style="color:#198754;">&#9679;</span> <span class="text">Pelaksanaan pelayanan dan pembinaan kehidupan beragama di wilayah kabupaten/kota.</span></div>
+        <div class="fungsi-item"><span style="color:#198754;">&#9679;</span> <span class="text">Pelayanan, bimbingan, dan pembinaan haji dan umrah.</span></div>
+        <div class="fungsi-item"><span style="color:#198754;">&#9679;</span> <span class="text">Pelayanan pendidikan agama dan keagamaan pada madrasah, pesantren, dan sekolah umum.</span></div>
+        <div class="fungsi-item"><span style="color:#198754;">&#9679;</span> <span class="text">Pengelolaan urusan kantor seperti perencanaan, keuangan, kepegawaian, serta administrasi umum.</span></div>
+        <div class="fungsi-item"><span style="color:#198754;">&#9679;</span> <span class="text">Pelaksanaan hubungan dan kerja sama dengan pemerintah daerah, lembaga, dan masyarakat di bidang keagamaan.</span></div>
+        <div class="fungsi-item"><span style="color:#198754;">&#9679;</span> <span class="text">Pengumpulan dan pengelolaan data serta informasi keagamaan untuk mendukung kebijakan pusat dan daerah.</span></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- BAGIAN VISI KANTOR KEMENAG INDRAMAYU -->
+<div class="sigap-banner wow fadeIn" id="visi-kemenag" data-wow-duration="1s" data-wow-delay="0.5s">
+  <div class="container text-center">
+
+    <!-- Judul utama -->
+    <h2 style="font-family:'Calistoga',serif; color:#124b2b; font-weight:800; margin-bottom:40px;">
+      VISI KANTOR KEMENAG INDRAMAYU
+    </h2>
+
+    <!-- === BAGIAN SMART ASN === -->
+    <div class="row align-items-center mb-5">
+
+      <!-- Gambar kiri -->
+      <div class="col-lg-6">
+        <div class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+          <img src="../assets/images/smartkemenag_image.png" alt="SMART ASN"
+               style="width:85%; height:auto; border-radius:12px; display:flex; margin:0 auto;">
+        </div>
+      </div>
+
+      <!-- Teks kanan -->
+      <div class="col-lg-6 text-start">
+        <div class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+
+          <!-- Card Deskripsi SMART -->
+          <div style="
+            background-color: rgba(255,255,255,0.92);
+            padding: 25px 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            font-family: 'Poppins', sans-serif;
+            max-width: 520px;
+            margin-left:auto;
+            margin-right:auto;
+          ">
+            <h3 style="font-family:'Calistoga',serif; color:#124b2b; font-weight:700; margin-bottom:10px;">
+              SMART ASN
+            </h3>
+            <h5 style="color:#198754; font-weight:600; margin-bottom:15px; font-size:15px;">
+              Nilai ASN Kementerian Agama
+            </h5>
+
+            <p style="font-size:16px; color:#2a2a2a; font-weight:600; line-height:1.8; margin-bottom:12px;">
+              ASN Kementerian Agama diharapkan memiliki karakter dan perilaku yang berlandaskan nilai-nilai SMART:
+            </p>
+
+            <div class="fungsi-list">
+              <div class="fungsi-item"><span class="dot"></span><span class="text">Santun</span></div>
+              <div class="fungsi-item"><span class="dot"></span><span class="text">Melayani</span></div>
+              <div class="fungsi-item"><span class="dot"></span><span class="text">Amanah</span></div>
+              <div class="fungsi-item"><span class="dot"></span><span class="text">Regulatif</span></div>
+              <div class="fungsi-item"><span class="dot"></span><span class="text">Tuntas</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- === BAGIAN 5 NILAI BUDAYA KERJA === -->
+    <div class="row align-items-center flex-row-reverse">
+
+      <!-- Gambar kanan -->
+      <div class="col-lg-6">
+        <div class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+          <img src="../assets/images/budayakerja_image.png" alt="5 Nilai Budaya Kerja Kemenag"
+               style="width:85%; height:auto; border-radius:12px; display:flex; margin:0 auto;">
+        </div>
+      </div>
+
+      <!-- Teks kiri -->
+      <div class="col-lg-6 text-start">
+        <div class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+
+          <!-- Card Deskripsi 5 Nilai Budaya -->
+          <div style="
+            background-color: rgba(255,255,255,0.92);
+            padding: 25px 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            font-family: 'Poppins', sans-serif;
+            max-width: 520px;
+            margin-left:auto;
+            margin-right:auto;
+          ">
+            <h3 style="font-family:'Calistoga',serif; color:#124b2b; font-weight:700; margin-bottom:10px;">
+              5 NILAI BUDAYA KERJA KEMENAG
+            </h3>
+            <h5 style="color:#198754; font-weight:600; margin-bottom:15px; font-size:15px;">
+              Nilai Utama ASN Kementerian Agama
+            </h5>
+
+            <p style="font-size:16px; color:#2a2a2a; font-weight:600; line-height:1.8; margin-bottom:12px;">
+              Lima nilai budaya kerja yang menjadi pedoman ASN Kementerian Agama dalam bekerja:
+            </p>
+
+            <div class="fungsi-list">
+              <div class="fungsi-item"><span class="dot"></span><span class="text">Integritas</span></div>
+              <div class="fungsi-item"><span class="dot"></span><span class="text">Profesional</span></div>
+              <div class="fungsi-item"><span class="dot"></span><span class="text">Inovatif</span></div>
+              <div class="fungsi-item"><span class="dot"></span><span class="text">Tanggung Jawab</span></div>
+              <div class="fungsi-item"><span class="dot"></span><span class="text">Keteladanan</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+  <footer id="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="copyright-text">
+            <p>KEMENTERIAN AGAMA KABUPATEN INDRAMAYU<br>2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+      // Deteksi apakah pengguna menggunakan perangkat mobile
+      function isMobile() {
+        return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      }
+
+      // Tambahkan event listener untuk setiap tombol
+      document.getElementById('facebook-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (isMobile()) {
+          window.location.href = "fb://page/100063865556073"; // ID halaman FB Indramayu
+          setTimeout(() => window.location.href = "https://www.facebook.com/kantorkemenagindramayu?locale=id_ID", 500);
+        } else {
+          window.open("https://www.facebook.com/kantorkemenagindramayu?locale=id_ID", "_blank");
+        }
+      });
+
+      document.getElementById('instagram-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (isMobile()) {
+          window.location.href = "instagram://user?username=kemenagindramayu";
+          setTimeout(() => window.location.href = "https://www.instagram.com/kemenagindramayu/", 500);
+        } else {
+          window.open("https://www.instagram.com/kemenagindramayu/", "_blank");
+        }
+      });
+
+      document.getElementById('tiktok-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (isMobile()) {
+          window.location.href = "snssdk1128://user/profile/7357149978224590854"; // TikTok app
+          setTimeout(() => window.location.href = "https://www.tiktok.com/@kemenag_indramayu?lang=id-ID", 500);
+        } else {
+          window.open("https://www.tiktok.com/@kemenag_indramayu?lang=id-ID", "_blank");
+        }
+      });
+
+      document.getElementById('youtube-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (isMobile()) {
+          window.location.href = "vnd.youtube://channel/UC8uMVR_FzN1YbQYt6NwR5VA"; // YouTube deep link (channel Kemenag Indramayu)
+          setTimeout(() => window.location.href = "https://www.youtube.com/@KantorKemenagIndramayu", 500);
+        } else {
+          window.open("https://www.youtube.com/@KantorKemenagIndramayu", "_blank");
+        }
+      });
+ </script>
+  
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const triggers = document.querySelectorAll('.nav .dropdown > .dropbtn');
+
+  function closeAll(except) {
+    document.querySelectorAll('.nav .dropdown.active').forEach(li => {
+      if (li !== except) li.classList.remove('active');
+    });
+  }
+
+  triggers.forEach(btn => {
+    const li = btn.closest('.dropdown');
+    if (!li) return;
+
+    // Aksesibilitas
+    btn.setAttribute('aria-haspopup', 'true');
+    btn.setAttribute('aria-expanded', 'false');
+
+    // klik/tap untuk toggle
+    ['click', 'touchstart'].forEach(evt => {
+      btn.addEventListener(evt, function (e) {
+        e.preventDefault();      // jangan langsung pindah halaman
+        e.stopPropagation();     // jangan kena handler luar
+        const isOpen = li.classList.contains('active');
+        closeAll(li);
+        li.classList.toggle('active', !isOpen);
+        btn.setAttribute('aria-expanded', String(!isOpen));
+      }, { passive: false });
+    });
+  });
+
+  // klik di luar nav -> tutup
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.nav')) closeAll();
+  });
+});
+</script>
+
+<script>
+  // Menu Dropdown Toggle (tanpa ubah display jadi block; kita pakai class .open)
+  (function($){
+      if ($('.menu-trigger').length) {
+        $('.menu-trigger').on('click', function () {
+          $(this).toggleClass('active');
+          const $main = $('.header-area .main-nav');
+          const $nav  = $main.find('.nav');
+          const open  = !$main.hasClass('open');
+
+          $main.toggleClass('open', open);
+
+          if (open) {
+            $nav.stop(true, true).slideDown(0, function () {
+              this.style.display = 'flex';        // paksa inline flex
+              this.style.flexDirection = 'column';
+              this.style.alignItems = 'stretch';
+            });
+          } else {
+            $nav.stop(true, true).slideUp(200, function () {
+              this.style.display = '';            // bersihkan agar desktop kembali normal
+              this.style.flexDirection = '';
+              this.style.alignItems = '';
+            });
+          }
+        });
+      }
+
+
+    // Scroll elevator (tetap, plus tutup menu di mobile)
+    $('.scroll-to-section a[href*=\\#]:not([href=\\#])').on('click', function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          var width = $(window).width();
+          if (width < 991) {
+            $('.menu-trigger').removeClass('active');
+            $('.header-area .main-nav').removeClass('open');
+            $('.header-area .main-nav .nav').stop(true,true).slideUp(200);
+          }
+          $('html,body').animate({ scrollTop: (target.offset().top) + 1 }, 700);
+          return false;
+        }
+      }
+    });
+  })(jQuery);
+</script>
+
+<script>
+// deteksi perubahan style display pada .nav
+const nav = document.querySelector('.header-area .main-nav .nav');
+
+if (nav) {
+  const observer = new MutationObserver(() => {
+    const current = nav.style.display;
+    // jika jQuery memberi style="display:block"
+    if (current === 'block') {
+      nav.style.display = 'flex';
+      nav.style.flexDirection = 'column';
+      nav.style.alignItems = 'stretch';
+    }
+  });
+
+  // amati setiap perubahan atribut style
+  observer.observe(nav, { attributes: true, attributeFilter: ['style'] });
+}
+</script>
+
+  <!-- Scripts: use local files that exist under /vendor and /assets -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/owl-carousel.js"></script>
+  <script src="../assets/js/animation.js"></script>
+  <script src="../assets/js/imagesloaded.js"></script>
+  <script src="../assets/js/popup.js"></script>
+  <script src="../assets/js/custom.js"></script>
+
+  <a href="https://wa.me/62881023554011?text=Assalamualaikum%20Warahmatullahi%20Wabarakatuh%20Hi%20Admin%20SIGAP%2C%0APerkenalkan%20saya%0ANama%20%3A%20%0Aingin%20bertanya" target="_blank" class="floating-btn">
+    <img src="../assets/images/askme.png" alt="Ask Me" />
+  </a>
+</body>
+</html>

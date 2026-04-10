@@ -1,0 +1,484 @@
+<?php
+// Plain PHP version converted from Laravel Blade (no framework dependencies)
+?><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portal resmi Kementerian Agama Kabupaten Indramayu">
+    <meta name="author" content="Kemenag Indramayu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="data:,">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Central Website KEMENTERIAN AGAMA KABUPATEN INDRAMAYU</title>
+
+    <!-- Bootstrap core CSS (local) -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/css/all.css">
+    <link rel="stylesheet" href="../assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="../assets/css/animated.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+
+    <style>
+
+/* ===== DATA MADRASAH ===== */
+.madrasah-section{
+  padding: 10% 0 90px;
+  background: linear-gradient(180deg, #e6f7ea 0%, #cfe3f2 100%);
+}
+
+.madrasah-title{
+  text-align:center;
+  margin-bottom:32px;
+}
+
+.madrasah-title h2{
+  display:inline-block;
+  padding:14px 32px;
+  background:#fff;
+  border-radius:28px;
+  font-family:'Calistoga',serif;
+  font-weight:800;
+  color:#111;
+  letter-spacing:1px;
+  box-shadow:0 10px 22px rgba(0,0,0,.06);
+  font-size: clamp(28px, 4vw, 46px);
+}
+
+/* grid kartu */
+.madrasah-grid{
+  display:grid;
+  gap:28px;
+  grid-template-columns: repeat(4, 1fr);
+  align-items:stretch;
+}
+
+@media (max-width: 992px){
+  .madrasah-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 576px){
+  .madrasah-grid{ grid-template-columns: 1fr; }
+}
+
+/* kartu = anchor */
+.madrasah-card{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-decoration:none;
+  border-radius:28px;
+  padding:24px 18px 28px;
+  background: linear-gradient(180deg, rgba(152,187,255,.55) 0%, rgba(187,232,198,.55) 100%);
+  border:3px solid rgba(255,255,255,.8);
+  box-shadow: 0 10px 26px rgba(0,0,0,.08), inset 0 0 0 1px rgba(255,255,255,.35);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.madrasah-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0,0,0,.14);
+  border-color: #ffffff;
+}
+
+/* bulatan angka */
+.madrasah-card-body{
+  width: 235px;
+  height: 235px;
+  max-width: 68vw;
+  max-height: 68vw;
+  border-radius: 50%;
+  background: #fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+}
+
+.madrasah-number{
+  font-family:'Poppins',sans-serif;
+  font-weight:800;
+  color:#111;
+  font-size: clamp(44px, 7vw, 96px);
+  line-height:1;
+}
+
+/* label pill di bawah */
+.madrasah-label{
+  margin-top:18px;
+  background:#fff;
+  color:#111;
+  font-family:'Poppins',sans-serif;
+  font-weight:700;
+  text-align:center;
+  padding:14px 22px;
+  border-radius:38px;
+  box-shadow: 0 10px 22px rgba(0,0,0,.08);
+  font-size: clamp(16px, 2.2vw, 26px);
+  min-width: 230px;
+}
+
+
+      .floating-btn {
+        position: fixed;
+        bottom: 30px;   /* tidak terlalu mepet ke bawah */
+        right: 30px;    /* tidak terlalu mepet ke kanan */
+        z-index: 9999;  /* tampil di atas elemen lain */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .floating-btn img {
+        width: 110px;       /* ukuran tombol */
+        height: auto;
+      }
+
+      .floating-btn:hover {
+        transform: scale(1.08);
+      }
+
+      @media (max-width: 768px) {
+        .floating-btn {
+          bottom: 20px;
+          right: 20px;
+        }
+        .floating-btn img {
+          width: 70px;
+        }
+      }
+
+      .misi-list {
+        margin-top: 10px;
+        padding-left: 0;
+      }
+      .misi-list li {
+        list-style: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 17px;
+        font-weight: 600;
+        color: #2a2a2a;
+        line-height: 1.9;
+        margin-bottom: 6px;
+        position: relative;
+        padding-left: 24px; /* jarak kiri agar bullet sejajar */
+      }
+      .misi-list li::before {
+        content: "•";
+        color: #124b2b; /* hijau khas Kemenag */
+        font-weight: 900;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    </style>
+
+  </head>
+  
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="sigap_page.php" class="logo d-flex align-items-center" style="gap: 12px; padding: 20px 0;">
+              <img src="../assets/images/logo.png" alt="Kemenag Logo" style="height: 50px; width: auto;">
+              <div style="line-height: 1.2; color: #064e3b; font-weight: bold; text-align: left;">
+                <div style="font-size: 16px;">KEMENTERIAN AGAMA</div>
+                <div style="font-size: 16px;">KABUPATEN INDRAMAYU</div>
+              </div>
+            </a>
+            <!-- ***** Logo End ***** -->
+
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav" >
+              <li><a href="../sigap/sigap_page.php">Halaman SIGAP</a></li>
+              <li><a href="../index.php">Home</a></li>
+              
+              <li class="dropdown">
+                <a href="#Informasi" class="dropbtn">Informasi Kemenag <i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown-content">
+                  <li><a href="../profil/profil_page.php">Profil, Visi & Misi</a></li>
+                  <li><a href="../organisasi/organisasi_page.php">Struktur Organisasi</a></li>
+                  <li><a href="../informasiKUA/informasiKUA_page.php">Informasi KUA</a></li>
+                  <li><a href="../informasiWakaf/informasiWakaf_page.php">Informasi Wakaf</a></li>
+                  <li><a href="../informasiMadrasah/informasiMadrasah_page.php">Informasi Madrasah</a></li>
+                  <li></li>
+                  <li><a href="../informasiPonpes/informasiPonpes_page.php">Informasi Ponpes</a></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>
+                <!-- <div class="gradient-button">
+                  <a id="modal_trigger" href="#modal">
+                    <i class="fa fa-sign-in-alt"></i> Sign In Now
+                  </a>
+                </div> -->
+              </li>
+            </ul>
+
+
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+<section id="data-madrasah" class="madrasah-section">
+  <div class="container">
+
+    <!-- Judul pill -->
+    <div class="madrasah-title">
+      <h2>DATA MADRASAH</h2>
+    </div>
+
+    <!-- Grid Kartu -->
+    <div class="madrasah-grid">
+
+      <!-- RA -->
+      <a class="madrasah-card" href="https://docs.google.com/spreadsheets/d/15iIT1gfFf0R7b6w6pZfmNtDu1_OQlsYM/edit?usp=drive_link&ouid=113837042151804396775&rtpof=true&sd=true" target="_blank" rel="noopener">
+        <div class="madrasah-card-body">
+          <div class="madrasah-number">167</div>
+        </div>
+        <div class="madrasah-label">Raudhatul Athfal</div>
+      </a>
+
+      <!-- MI -->
+      <a class="madrasah-card" href="https://docs.google.com/spreadsheets/d/10aIH7A9pGRnodmP9p1sZo8bMCdMs_ArB/edit?usp=drive_link&ouid=113837042151804396775&rtpof=true&sd=true" target="_blank" rel="noopener">
+        <div class="madrasah-card-body">
+          <div class="madrasah-number">161</div>
+        </div>
+        <div class="madrasah-label">Madrasah Ibtidaiyah</div>
+      </a>
+
+      <!-- MTs -->
+      <a class="madrasah-card" href="https://docs.google.com/spreadsheets/d/19cv7OOSPyzzhDeOZnSJy2SaLI7eRCcQ2/edit?usp=drive_link&ouid=113837042151804396775&rtpof=true&sd=true" target="_blank" rel="noopener">
+        <div class="madrasah-card-body">
+          <div class="madrasah-number">95</div>
+        </div>
+        <div class="madrasah-label">Madrasah Tsanawiyah</div>
+      </a>
+
+      <!-- MA -->
+      <a class="madrasah-card" href="https://docs.google.com/spreadsheets/d/1JZKib6mf49aPwot_SmOMB0Y8qglQ1Mx4/edit?usp=drive_link&ouid=113837042151804396775&rtpof=true&sd=true" target="_blank" rel="noopener">
+        <div class="madrasah-card-body">
+          <div class="madrasah-number">33</div>
+        </div>
+        <div class="madrasah-label">Madrasah Aliyah</div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <footer id="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="copyright-text">
+            <p>KEMENTERIAN AGAMA KABUPATEN INDRAMAYU<br>2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+      // Deteksi apakah pengguna menggunakan perangkat mobile
+      function isMobile() {
+        return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      }
+
+      // Tambahkan event listener untuk setiap tombol
+      document.getElementById('facebook-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (isMobile()) {
+          window.location.href = "fb://page/100063865556073"; // ID halaman FB Indramayu
+          setTimeout(() => window.location.href = "https://www.facebook.com/kantorkemenagindramayu?locale=id_ID", 500);
+        } else {
+          window.open("https://www.facebook.com/kantorkemenagindramayu?locale=id_ID", "_blank");
+        }
+      });
+
+      document.getElementById('instagram-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (isMobile()) {
+          window.location.href = "instagram://user?username=kemenagindramayu";
+          setTimeout(() => window.location.href = "https://www.instagram.com/kemenagindramayu/", 500);
+        } else {
+          window.open("https://www.instagram.com/kemenagindramayu/", "_blank");
+        }
+      });
+
+      document.getElementById('tiktok-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (isMobile()) {
+          window.location.href = "snssdk1128://user/profile/7357149978224590854"; // TikTok app
+          setTimeout(() => window.location.href = "https://www.tiktok.com/@kemenag_indramayu?lang=id-ID", 500);
+        } else {
+          window.open("https://www.tiktok.com/@kemenag_indramayu?lang=id-ID", "_blank");
+        }
+      });
+
+      document.getElementById('youtube-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (isMobile()) {
+          window.location.href = "vnd.youtube://channel/UC8uMVR_FzN1YbQYt6NwR5VA"; // YouTube deep link (channel Kemenag Indramayu)
+          setTimeout(() => window.location.href = "https://www.youtube.com/@KantorKemenagIndramayu", 500);
+        } else {
+          window.open("https://www.youtube.com/@KantorKemenagIndramayu", "_blank");
+        }
+      });
+ </script>
+  
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const triggers = document.querySelectorAll('.nav .dropdown > .dropbtn');
+
+  function closeAll(except) {
+    document.querySelectorAll('.nav .dropdown.active').forEach(li => {
+      if (li !== except) li.classList.remove('active');
+    });
+  }
+
+  triggers.forEach(btn => {
+    const li = btn.closest('.dropdown');
+    if (!li) return;
+
+    // Aksesibilitas
+    btn.setAttribute('aria-haspopup', 'true');
+    btn.setAttribute('aria-expanded', 'false');
+
+    // klik/tap untuk toggle
+    ['click', 'touchstart'].forEach(evt => {
+      btn.addEventListener(evt, function (e) {
+        e.preventDefault();      // jangan langsung pindah halaman
+        e.stopPropagation();     // jangan kena handler luar
+        const isOpen = li.classList.contains('active');
+        closeAll(li);
+        li.classList.toggle('active', !isOpen);
+        btn.setAttribute('aria-expanded', String(!isOpen));
+      }, { passive: false });
+    });
+  });
+
+  // klik di luar nav -> tutup
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.nav')) closeAll();
+  });
+});
+</script>
+
+<script>
+  // Menu Dropdown Toggle (tanpa ubah display jadi block; kita pakai class .open)
+  (function($){
+      if ($('.menu-trigger').length) {
+        $('.menu-trigger').on('click', function () {
+          $(this).toggleClass('active');
+          const $main = $('.header-area .main-nav');
+          const $nav  = $main.find('.nav');
+          const open  = !$main.hasClass('open');
+
+          $main.toggleClass('open', open);
+
+          if (open) {
+            $nav.stop(true, true).slideDown(0, function () {
+              this.style.display = 'flex';        // paksa inline flex
+              this.style.flexDirection = 'column';
+              this.style.alignItems = 'stretch';
+            });
+          } else {
+            $nav.stop(true, true).slideUp(200, function () {
+              this.style.display = '';            // bersihkan agar desktop kembali normal
+              this.style.flexDirection = '';
+              this.style.alignItems = '';
+            });
+          }
+        });
+      }
+
+
+    // Scroll elevator (tetap, plus tutup menu di mobile)
+    $('.scroll-to-section a[href*=\\#]:not([href=\\#])').on('click', function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          var width = $(window).width();
+          if (width < 991) {
+            $('.menu-trigger').removeClass('active');
+            $('.header-area .main-nav').removeClass('open');
+            $('.header-area .main-nav .nav').stop(true,true).slideUp(200);
+          }
+          $('html,body').animate({ scrollTop: (target.offset().top) + 1 }, 700);
+          return false;
+        }
+      }
+    });
+  })(jQuery);
+</script>
+
+<script>
+// deteksi perubahan style display pada .nav
+const nav = document.querySelector('.header-area .main-nav .nav');
+
+if (nav) {
+  const observer = new MutationObserver(() => {
+    const current = nav.style.display;
+    // jika jQuery memberi style="display:block"
+    if (current === 'block') {
+      nav.style.display = 'flex';
+      nav.style.flexDirection = 'column';
+      nav.style.alignItems = 'stretch';
+    }
+  });
+
+  // amati setiap perubahan atribut style
+  observer.observe(nav, { attributes: true, attributeFilter: ['style'] });
+}
+</script>
+
+  <!-- Scripts: use local files that exist under /vendor and /assets -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/owl-carousel.js"></script>
+  <script src="../assets/js/animation.js"></script>
+  <script src="../assets/js/imagesloaded.js"></script>
+  <script src="../assets/js/popup.js"></script>
+  <script src="../assets/js/custom.js"></script>
+
+  <a href="https://wa.me/62881023554011?text=Assalamualaikum%20Warahmatullahi%20Wabarakatuh%20Hi%20Admin%20SIGAP%2C%0APerkenalkan%20saya%0ANama%20%3A%20%0Aingin%20bertanya" target="_blank" class="floating-btn">
+    <img src="../assets/images/askme.png" alt="Ask Me" />
+  </a>
+</body>
+</html>

@@ -1,0 +1,450 @@
+<?php
+// Plain PHP version converted from Laravel Blade (no framework dependencies)
+?><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portal resmi Kementerian Agama Kabupaten Indramayu">
+    <meta name="author" content="Kemenag Indramayu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="data:,">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Central Website KEMENTERIAN AGAMA KABUPATEN INDRAMAYU</title>
+
+    <!-- Bootstrap core CSS (local) -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/css/all.css">
+    <link rel="stylesheet" href="../assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="../assets/css/animated.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+
+    <style>
+      .floating-btn {
+        position: fixed;
+        bottom: 30px;   /* tidak terlalu mepet ke bawah */
+        right: 30px;    /* tidak terlalu mepet ke kanan */
+        z-index: 9999;  /* tampil di atas elemen lain */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .floating-btn img {
+        width: 110px;       /* ukuran tombol */
+        height: auto;
+      }
+
+      .floating-btn:hover {
+        transform: scale(1.08);
+      }
+
+      @media (max-width: 768px) {
+        .floating-btn {
+          bottom: 20px;
+          right: 20px;
+        }
+        .floating-btn img {
+          width: 70px;
+        }
+      }
+    </style>
+
+  </head>
+  
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="sigap_page.php" class="logo d-flex align-items-center" style="gap: 12px; padding: 20px 0;">
+              <img src="../assets/images/logo.png" alt="Kemenag Logo" style="height: 50px; width: auto;">
+              <div style="line-height: 1.2; color: #064e3b; font-weight: bold; text-align: left;">
+                <div style="font-size: 16px;">KEMENTERIAN AGAMA</div>
+                <div style="font-size: 16px;">KABUPATEN INDRAMAYU</div>
+              </div>
+            </a>
+            <!-- ***** Logo End ***** -->
+
+
+
+            <ul class="nav" >
+              <li class="scroll-to-section"><a href="#SIGAP" class="active">Halaman SIGAP</a></li>
+              <li><a href="../index.php">Home</a></li>
+              <li class="scroll-to-section"><a href="#social">Sosial Media</a></li>
+              <li class="dropdown">
+                <a href="#Informasi" class="dropbtn">Informasi Kemenag <i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown-content">
+                  <li><a href="../profil/profil_page.php">Profil, Visi & Misi</a></li>
+                  <li><a href="../organisasi/organisasi_page.php">Struktur Organisasi</a></li>
+                  <li><a href="../informasiKUA/informasiKUA_page.php">Informasi KUA</a></li>
+                  <li><a href="../informasiWakaf/informasiWakaf_page.php">Informasi Wakaf</a></li>
+                  <li><a href="../informasiMadrasah/informasiMadrasah_page.php">Informasi Madrasah</a></li>
+                  <li></li>
+                  <li><a href="../informasiPonpes/informasiPonpes_page.php">Informasi Ponpes</a></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>
+                <!-- <div class="gradient-button">
+                  <a id="modal_trigger" href="#modal">
+                    <i class="fa fa-sign-in-alt"></i> Sign In Now
+                  </a>
+                </div> -->
+              </li>
+            </ul>
+
+
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  
+<div class="sigap-banner wow fadeIn" id="SIGAP" data-wow-duration="1s" data-wow-delay="0.5s">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Maskot kiri -->
+      <div class="col-lg-6">
+        <div class="right-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+          <img src="../assets/images/sigap1.png" alt="Maskot SIGAP">
+        </div>
+      </div>
+
+      <!-- Teks kanan -->
+      <div class="col-lg-6 align-self-center">
+        <div class="left-content show-up header-text wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+          <h2>SIGAP</h2>
+          <h5>(Sistem Informasi Kemenag Aktif dan Produktif)</h5>
+          <p>
+            Sistem Informasi Kemenag Aktif dan Produktif (SIGAP) ialah sebuah inovasi layanan digital
+            website Kementerian Agama Kabupaten Indramayu yang berisi <em>content center</em> berupa
+            program-program layanan Kemenag Indramayu, informasi lengkap, dan kampanye edukasi digital.
+          </p>
+          <div class="slogan">“Aktif Melayani, Produktif Berinovasi”</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section class="social-section" id="social">
+  <h1>Sosial Media Kami</h1>
+  <h3>Kantor Kementerian Agama Kabupaten Indramayu</h3>
+
+  <div class="social-buttons">
+    <a href="#" class="social-btn" id="facebook-btn">
+      <img src="../assets/images/facebook_logo.png" alt="Facebook Logo">
+      Facebook
+    </a>
+    <a href="#" class="social-btn" id="instagram-btn">
+      <img src="../assets/images/instagram_logo.png" alt="Instagram Logo">
+      Instagram
+    </a>
+    <a href="#" class="social-btn" id="tiktok-btn">
+      <img src="../assets/images/tiktok_logo.png" alt="TikTok Logo">
+      TikTok
+    </a>
+    <a href="#" class="social-btn" id="youtube-btn">
+      <img src="../assets/images/youtube_logo.png" alt="YouTube Logo">
+      YouTube
+    </a>
+  </div>
+</section>
+
+<section class="ig-highlight" id="ig-highlight">
+  <h2 class="ig-title">sorotan konten instagram</h2>
+  <p class="ig-subtitle">kantor kementerian agama kabupaten indramayu</p>
+
+  <div class="ig-cards">
+    <!-- 10 konten dari Draft Code IG[1].txt -->
+    <div class="ig-card">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DPirxXCEWSH/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
+    </div>
+    <div class="ig-card">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DPim3J1FYVs/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
+    </div>
+    <div class="ig-card">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DNugNawYu3K/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
+    </div>
+    <div class="ig-card">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DP2DdggDKEj/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
+    </div>
+    <div class="ig-card">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DP4Bp8xkeBC/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
+    </div>
+    <div class="ig-card">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DP6l9dlkQqs/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
+    </div>
+    <div class="ig-card">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DQAdLAUk69r/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
+    </div>
+    <div class="ig-card">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DQwkyK6ESO4/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
+    </div>
+    <div class="ig-card">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DPw5VE2D9Mn/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
+    </div>
+  </div>
+
+  <script async src="//www.instagram.com/embed.js"></script>
+</section>
+
+<style>
+  .ig-highlight {
+    text-align: center;
+    padding: 80px 0;
+    background: #f8fff8;
+  }
+
+  .ig-title {
+    font-family: 'Calistoga', serif;
+    color: #124b2b;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .ig-subtitle {
+    font-family: 'Poppins', sans-serif;
+    color: #198754;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+
+  .ig-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    justify-items: center;
+  }
+
+  .ig-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .instagram-media {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+</style>
+
+
+
+
+
+  <footer id="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="copyright-text">
+            <p>KEMENTERIAN AGAMA KABUPATEN INDRAMAYU<br>2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+      // Deteksi apakah pengguna menggunakan perangkat mobile
+      function isMobile() {
+        return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      }
+
+      // Tambahkan event listener untuk setiap tombol
+      document.getElementById('facebook-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (isMobile()) {
+          window.location.href = "fb://page/100063865556073"; // ID halaman FB Indramayu
+          setTimeout(() => window.location.href = "https://www.facebook.com/kantorkemenagindramayu?locale=id_ID", 500);
+        } else {
+          window.open("https://www.facebook.com/kantorkemenagindramayu?locale=id_ID", "_blank");
+        }
+      });
+
+      document.getElementById('instagram-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (isMobile()) {
+          window.location.href = "instagram://user?username=kemenagindramayu";
+          setTimeout(() => window.location.href = "https://www.instagram.com/kemenagindramayu/", 500);
+        } else {
+          window.open("https://www.instagram.com/kemenagindramayu/", "_blank");
+        }
+      });
+
+      document.getElementById('tiktok-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (isMobile()) {
+          window.location.href = "snssdk1128://user/profile/7357149978224590854"; // TikTok app
+          setTimeout(() => window.location.href = "https://www.tiktok.com/@kemenag_indramayu?lang=id-ID", 500);
+        } else {
+          window.open("https://www.tiktok.com/@kemenag_indramayu?lang=id-ID", "_blank");
+        }
+      });
+
+      document.getElementById('youtube-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (isMobile()) {
+          window.location.href = "vnd.youtube://channel/UC8uMVR_FzN1YbQYt6NwR5VA"; // YouTube deep link (channel Kemenag Indramayu)
+          setTimeout(() => window.location.href = "https://www.youtube.com/@KantorKemenagIndramayu", 500);
+        } else {
+          window.open("https://www.youtube.com/@KantorKemenagIndramayu", "_blank");
+        }
+      });
+ </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const triggers = document.querySelectorAll('.nav .dropdown > .dropbtn');
+
+  function closeAll(except) {
+    document.querySelectorAll('.nav .dropdown.active').forEach(li => {
+      if (li !== except) li.classList.remove('active');
+    });
+  }
+
+  triggers.forEach(btn => {
+    const li = btn.closest('.dropdown');
+    if (!li) return;
+
+    // Aksesibilitas
+    btn.setAttribute('aria-haspopup', 'true');
+    btn.setAttribute('aria-expanded', 'false');
+
+    // klik/tap untuk toggle
+    ['click', 'touchstart'].forEach(evt => {
+      btn.addEventListener(evt, function (e) {
+        e.preventDefault();      // jangan langsung pindah halaman
+        e.stopPropagation();     // jangan kena handler luar
+        const isOpen = li.classList.contains('active');
+        closeAll(li);
+        li.classList.toggle('active', !isOpen);
+        btn.setAttribute('aria-expanded', String(!isOpen));
+      }, { passive: false });
+    });
+  });
+
+  // klik di luar nav -> tutup
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.nav')) closeAll();
+  });
+});
+</script>
+
+<script>
+  // Menu Dropdown Toggle (tanpa ubah display jadi block; kita pakai class .open)
+  (function($){
+      if ($('.menu-trigger').length) {
+        $('.menu-trigger').on('click', function () {
+          $(this).toggleClass('active');
+          const $main = $('.header-area .main-nav');
+          const $nav  = $main.find('.nav');
+          const open  = !$main.hasClass('open');
+
+          $main.toggleClass('open', open);
+
+          if (open) {
+            $nav.stop(true, true).slideDown(0, function () {
+              this.style.display = 'flex';        // paksa inline flex
+              this.style.flexDirection = 'column';
+              this.style.alignItems = 'stretch';
+            });
+          } else {
+            $nav.stop(true, true).slideUp(200, function () {
+              this.style.display = '';            // bersihkan agar desktop kembali normal
+              this.style.flexDirection = '';
+              this.style.alignItems = '';
+            });
+          }
+        });
+      }
+
+
+    // Scroll elevator (tetap, plus tutup menu di mobile)
+    $('.scroll-to-section a[href*=\\#]:not([href=\\#])').on('click', function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          var width = $(window).width();
+          if (width < 991) {
+            $('.menu-trigger').removeClass('active');
+            $('.header-area .main-nav').removeClass('open');
+            $('.header-area .main-nav .nav').stop(true,true).slideUp(200);
+          }
+          $('html,body').animate({ scrollTop: (target.offset().top) + 1 }, 700);
+          return false;
+        }
+      }
+    });
+  })(jQuery);
+</script>
+
+<script>
+// deteksi perubahan style display pada .nav
+const nav = document.querySelector('.header-area .main-nav .nav');
+
+if (nav) {
+  const observer = new MutationObserver(() => {
+    const current = nav.style.display;
+    // jika jQuery memberi style="display:block"
+    if (current === 'block') {
+      nav.style.display = 'flex';
+      nav.style.flexDirection = 'column';
+      nav.style.alignItems = 'stretch';
+    }
+  });
+
+  // amati setiap perubahan atribut style
+  observer.observe(nav, { attributes: true, attributeFilter: ['style'] });
+}
+</script>
+
+
+  
+
+  <!-- Scripts: use local files that exist under /vendor and /assets -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/owl-carousel.js"></script>
+  <script src="../assets/js/animation.js"></script>
+  <script src="../assets/js/imagesloaded.js"></script>
+  <script src="../assets/js/popup.js"></script>
+  <script src="../assets/js/custom.js"></script>
+
+  <a href="https://wa.me/62881023554011?text=Assalamualaikum%20Warahmatullahi%20Wabarakatuh%20Hi%20Admin%20SIGAP%2C%0APerkenalkan%20saya%0ANama%20%3A%20%0Aingin%20bertanya" target="_blank" class="floating-btn">
+    <img src="../assets/images/askme.png" alt="Ask Me" />
+  </a>
+</body>
+</html>

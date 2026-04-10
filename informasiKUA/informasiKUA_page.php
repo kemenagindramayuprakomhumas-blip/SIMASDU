@@ -1,0 +1,813 @@
+<?php
+// Plain PHP version converted from Laravel Blade (no framework dependencies)
+?><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portal resmi Kementerian Agama Kabupaten Indramayu">
+    <meta name="author" content="Kemenag Indramayu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="data:,">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Central Website KEMENTERIAN AGAMA KABUPATEN INDRAMAYU</title>
+
+    <!-- Bootstrap core CSS (local) -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/css/all.css">
+    <link rel="stylesheet" href="../assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="../assets/css/animated.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+
+    <style>
+      .floating-btn {
+        position: fixed;
+        bottom: 30px;   /* tidak terlalu mepet ke bawah */
+        right: 30px;    /* tidak terlalu mepet ke kanan */
+        z-index: 9999;  /* tampil di atas elemen lain */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .floating-btn img {
+        width: 110px;       /* ukuran tombol */
+        height: auto;
+      }
+
+      .floating-btn:hover {
+        transform: scale(1.08);
+      }
+
+      @media (max-width: 768px) {
+        .floating-btn {
+          bottom: 20px;
+          right: 20px;
+        }
+        .floating-btn img {
+          width: 70px;
+        }
+      }
+
+      .misi-list {
+        margin-top: 10px;
+        padding-left: 0;
+      }
+      .misi-list li {
+        list-style: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 17px;
+        font-weight: 600;
+        color: #2a2a2a;
+        line-height: 1.9;
+        margin-bottom: 6px;
+        position: relative;
+        padding-left: 24px; /* jarak kiri agar bullet sejajar */
+      }
+      .misi-list li::before {
+        content: "•";
+        color: #124b2b; /* hijau khas Kemenag */
+        font-weight: 900;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    </style>
+
+  </head>
+  
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="sigap_page.php" class="logo d-flex align-items-center" style="gap: 12px; padding: 20px 0;">
+              <img src="../assets/images/logo.png" alt="Kemenag Logo" style="height: 50px; width: auto;">
+              <div style="line-height: 1.2; color: #064e3b; font-weight: bold; text-align: left;">
+                <div style="font-size: 16px;">KEMENTERIAN AGAMA</div>
+                <div style="font-size: 16px;">KABUPATEN INDRAMAYU</div>
+              </div>
+            </a>
+            <!-- ***** Logo End ***** -->
+
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav" >
+              <li><a href="../sigap/sigap_page.php">Halaman SIGAP</a></li>
+              <li><a href="../index.php">Home</a></li>
+              
+              <li class="dropdown">
+                <a href="#Informasi" class="dropbtn">Informasi Kemenag <i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown-content">
+                  <li><a href="../profil/profil_page.php">Profil, Visi & Misi</a></li>
+                  <li><a href="../organisasi/organisasi_page.php">Struktur Organisasi</a></li>
+                  <li><a href="../informasiKUA/informasiKUA_page.php">Informasi KUA</a></li>
+                  <li><a href="../informasiWakaf/informasiWakaf_page.php">Informasi Wakaf</a></li>
+                  <li><a href="../informasiMadrasah/informasiMadrasah_page.php">Informasi Madrasah</a></li>
+                  <li></li>
+                  <li><a href="../informasiPonpes/informasiPonpes_page.php">Informasi Ponpes</a></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>
+                <!-- <div class="gradient-button">
+                  <a id="modal_trigger" href="#modal">
+                    <i class="fa fa-sign-in-alt"></i> Sign In Now
+                  </a>
+                </div> -->
+              </li>
+            </ul>
+
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+
+
+<!-- ====== DATA KUA KAB. INDRAMAYU (REPLACE THIS WHOLE BLOCK) ====== -->
+<section id="data-kua" class="kua-section">
+  <div class="container">
+    <h2 class="kua-title">DATA KUA KAB. INDRAMAYU</h2>
+    <p class="kua-subtitle">
+      Kabupaten Indramayu memiliki 31 KUA yang tersebar di berbagai Kecamatan sebagai berikut:
+    </p>
+
+    <!-- GRID NAMA KUA (tiap item = tombol / button) -->
+    <div class="kua-grid">
+      <!-- Isi sesuai daftar KUA; cukup tambah button baru dengan data-name -->
+      <button class="kua-card" data-name="KUA Haurgeulis">KUA Haurgeulis</button>
+      <button class="kua-card" data-name="KUA Kroya">KUA Kroya</button>
+      <button class="kua-card" data-name="KUA Gabuswetan">KUA Gabuswetan</button>
+      <button class="kua-card" data-name="KUA Cikedung">KUA Cikedung</button>
+
+      <button class="kua-card" data-name="KUA Lelea">KUA Lelea</button>
+      <button class="kua-card" data-name="KUA Bangodua">KUA Bangodua</button>
+      <button class="kua-card" data-name="KUA Widasari">KUA Widasari</button>
+      <button class="kua-card" data-name="KUA Kertasemaya">KUA Kertasesemaya</button>
+
+      <button class="kua-card" data-name="KUA Krangkeng">KUA Krangkeng</button>
+      <button class="kua-card" data-name="KUA Karangampel">KUA Karangampel</button>
+      <button class="kua-card" data-name="KUA Juntinyuat">KUA Juntinyuat</button>
+      <button class="kua-card" data-name="KUA Sliyeg">KUA Sliyeg</button>
+
+      <button class="kua-card" data-name="KUA Jatibarang">KUA Jatibarang</button>
+      <button class="kua-card" data-name="KUA Balongan">KUA Balongan</button>
+      <button class="kua-card" data-name="KUA Indramayu">KUA Indramayu</button>
+      <button class="kua-card" data-name="KUA Sindang">KUA Sindang</button>
+
+      <button class="kua-card" data-name="KUA Cantigi">KUA Cantigi</button>
+      <button class="kua-card" data-name="KUA Lohbener">KUA Lohbener</button>
+      <button class="kua-card" data-name="KUA Arahan">KUA Arahan</button>
+      <button class="kua-card" data-name="KUA Losarang">KUA Losarang</button>
+
+      <button class="kua-card" data-name="KUA Kandanghaur">KUA Kandanghaur</button>
+      <button class="kua-card" data-name="KUA Bongas">KUA Bongas</button>
+      <button class="kua-card" data-name="KUA Anjatan">KUA Anjatan</button>
+      <button class="kua-card" data-name="KUA Sukra">KUA Sukra</button>
+
+      <button class="kua-card" data-name="KUA Gantar">KUA Gantar</button>
+      <button class="kua-card" data-name="KUA Terisi">KUA Terisi</button>
+      <button class="kua-card" data-name="KUA Sukagumiwang">KUA Sukagumiwang</button>
+      <button class="kua-card" data-name="KUA Kedokan Bunder">KUA Kedokan Bunder</button>
+
+      <button class="kua-card" data-name="KUA Pasekan">KUA Pasekan</button>
+      <button class="kua-card" data-name="KUA Tukdana">KUA Tukdana</button>
+      <button class="kua-card" data-name="KUA Patrol">KUA Patrol</button>
+    </div>
+  </div>
+
+  <!-- ===== Modal Overlay ===== -->
+  <div class="kua-modal" id="kuaModal" aria-hidden="true">
+    <div class="kua-backdrop" data-close="true"></div>
+
+    <div class="kua-dialog" role="dialog" aria-modal="true" aria-labelledby="kuaModalTitle">
+      <button class="kua-close" type="button" aria-label="Tutup" data-close="true">×</button>
+
+      <h3 id="kuaModalTitle" class="kua-modal-title">Judul KUA</h3>
+
+      <div class="kua-modal-body">
+        <p><strong>Kode KUA :</strong> <span id="mKode">-</span></p>
+        <p><strong>Alamat :</strong> <span id="mAlamat">-</span></p>
+        <p><strong>Email :</strong> <span id="mEmail">-</span></p>
+        <p><strong>Nama Kepala KUA :</strong> <span id="mKepala">-</span></p>
+
+        <div class="kua-table-wrap">
+          <table class="kua-table">
+            <thead>
+              <tr>
+                <th>Total Pernikahan</th>
+                <th>Jumlah Masjid</th>
+                <th>Jumlah Majelis Taklim</th>
+                <th>Jumlah Bimwin</th>
+                <th>Jumlah Musala</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="mNikah">-</td>
+                <td id="mMasjid">-</td>
+                <td id="mMajelis">-</td>
+                <td id="mBimwin">-</td>
+                <td id="mMusala">-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Styles khusus section ini ===== -->
+<style>
+  .kua-section{
+    padding:10% 0 80px;
+    background:linear-gradient(to bottom,#eaf8ef,#cce7f0);
+    font-family:'Poppins',sans-serif;
+  }
+  .kua-title{
+    font-family:'Calistoga',serif;
+    color:#124b2b;
+    text-align:center;
+    font-weight:800;
+    margin:0 auto 10px;
+    padding:8px 22px;
+    display:table;
+    background:#fff;
+    border-radius:14px;
+    box-shadow:0 6px 16px rgba(0,0,0,.06);
+    font-size:clamp(22px,4.3vw,38px);
+  }
+  .kua-subtitle{
+    text-align:center;
+    color:#1c2b2b;
+    font-weight:600;
+    margin:10px auto 28px;
+    max-width:980px;
+  }
+
+  .kua-grid{
+    display:grid;
+    gap:18px;
+    grid-template-columns:repeat(4,1fr);
+  }
+  @media (max-width:991.98px){
+    .kua-grid{grid-template-columns:repeat(2,1fr);}
+  }
+  @media (max-width:575.98px){
+    .kua-grid{grid-template-columns:1fr;}
+  }
+
+  .kua-card{
+    background:#fff;
+    border:2px solid #c7dfeb;
+    border-radius:12px;
+    padding:18px 16px;
+    font-weight:800;
+    font-size:clamp(14px,2.2vw,18px);
+    color:#0f5ec6;
+    letter-spacing:.2px;
+    text-align:left;
+    cursor:pointer;
+    transition:.2s ease;
+    box-shadow:0 6px 12px rgba(0,0,0,.04);
+  }
+  .kua-card:hover,.kua-card:focus{
+    transform:translateY(-2px);
+    border-color:#a9d2e6;
+    box-shadow:0 10px 18px rgba(0,0,0,.08);
+    outline:none;
+  }
+
+  /* Modal */
+  .kua-modal{position:fixed;inset:0;display:none;}
+  .kua-modal.show{display:block;}
+  .kua-backdrop{position:absolute;inset:0;background:rgba(15,33,38,.55);backdrop-filter:blur(2px);}
+  .kua-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 920px;
+    width: 90%;
+    background: #fff;
+    border-radius: 22px;
+    padding: 26px 26px 30px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+  }
+
+  @media (max-width:575.98px){
+    .kua-dialog{margin:30px 12px;padding:18px;}
+  }
+  .kua-close{
+    position:absolute;right:14px;top:12px;
+    width:44px;height:44px;border-radius:50%;
+    background:#5f6d75;color:#fff;border:0;cursor:pointer;
+    font-size:28px;line-height:44px;text-align:center;
+  }
+  .kua-close:hover{background:#49565d;}
+  .kua-modal-title{
+    font-family:'Calistoga',serif;
+    color:#124b2b;
+    text-align:center;
+    font-size:clamp(22px,3.8vw,34px);
+    margin:6px 0 10px;
+  }
+  .kua-modal-body p{margin:8px 0;font-size:clamp(14px,2.2vw,20px);}
+  .kua-modal-body strong{font-weight:800;}
+
+  .kua-table-wrap{margin-top:14px;overflow:auto;border-radius:12px;border:2px solid #1b3d34;}
+  .kua-table{width:100%;border-collapse:collapse;background:#fff;}
+  .kua-table th,.kua-table td{
+    border:2px solid #1b3d34;
+    padding:16px 12px;
+    text-align:center;
+    font-weight:700;
+  }
+  .kua-table th{background:#f7fbf8;}
+</style>
+
+<!-- ===== Script: data & interaksi modal ===== -->
+<script>
+  // Data KUA (contoh terisi lengkap untuk Haurgeulis; lainnya placeholder)
+  const KUA_DATA = {
+    "KUA Haurgeulis": {
+      kode: "3212011",
+      alamat: "Jl. Jendral Sudirman No. 35 Haurgeulis, Kab. Indramayu, Jawa Barat",
+      email: "kua1220haurgeulis@gmail.com",
+      kepala: "H. Mohder, S.Ag., M.H.I",
+      stat: { nikah: 44, masjid: 66, majelis: 185, bimwin: 101, musala: 175 }
+    },
+    // Tambahkan data yang lain di sini jika sudah tersedia:
+"KUA Kroya": {
+      kode: "3212021",
+      alamat: "Jl. Raya Pejaten Kroya",
+      email: "kua1222kroya@gmail.com",
+      kepala: "H. Abdurrasyid Ridha, M.Ag.",
+      stat: { nikah: 42, masjid: 51, majelis: 163, bimwin: 63, musala: 179 }
+    },
+"KUA Gabuswetan": {
+      kode: "3212031",
+      alamat: "Jl. PU. Saradan No. 371 Sekarmulya",
+      email: "kuagabuswetan@gmail.com",
+      kepala: "Mochamad Hasbi, S.Pd.I",
+      stat: { nikah: 34, masjid: 46, majelis: 178, bimwin: 17, musala: 112 }
+    },
+"KUA Cikedung": {
+      kode: "3212041",
+      alamat: "Jl. Raya Cikedung - Jambak",
+      email: "kuacikedung@gmail.com",
+      kepala: "H.Karsim, S.Ag",
+      stat: { nikah: 25, masjid: 7, majelis: 158, bimwin: 28, musala: 143 }
+    },
+"KUA Lelea": {
+      kode: "3212051",
+      alamat: "Jl. Raya Tugu No. 13 Lelea",
+      email: "kualelea.indramayu@gmail.com",
+      kepala: "Mufti Ali, S.Ag",
+      stat: { nikah: 51, masjid: 24, majelis: 127, bimwin: 49, musala: 140 }
+    },
+"KUA Bangodua": {
+      kode: "3212061",
+      alamat: "Jl. H. Sanusi Blok Raso Wanasari Bangodua",
+      email: "kuabangodua02@gmail.com",
+      kepala: "H. Guproni, S.Sos.",
+      stat: { nikah: 20, masjid: 24, majelis: 102, bimwin: 54, musala: 93 }
+    },
+"KUA Widasari": {
+      kode: "3212071",
+      alamat: "Desa Kongsijaya No. 1 Widasari",
+      email: "kuawidasari@yahoo.com",
+      kepala: "Amirudin Nurjaman, S.Ag, M.H.I",
+      stat: { nikah: 21, masjid: 22, majelis: 125, bimwin: 41, musala: 166 }
+    },
+"KUA Kertasemaya": {
+      kode: "3212081",
+      alamat: "Jl. Raya Binaria No. 9 Tulungagung Kertasemaya",
+      email: "kua.kertasemaya@yahoo.com",
+      kepala: "H. Sihabudin, S. Sy., M. Si",
+      stat: { nikah: 44, masjid: 20, majelis: 191, bimwin: 80, musala: 229 }
+    },
+"KUA Krangkeng": {
+      kode: "3212091",
+      alamat: "Jl. Raya Krangkeng No. 06",
+      email: "kuakrangkengindramayu@gmail.com",
+      kepala: "Drs. H. Maulani, M.HI",
+      stat: { nikah: 48, masjid: 36, majelis: 240, bimwin: 67, musala: 221 }
+    },
+"KUA Karangampel": {
+      kode: "3212101",
+      alamat: "Jl. Dampuawang No. 131 Karangampel",
+      email: "kua.karangampelindramayu@gmail.com",
+      kepala: "H. Ahmad Maufur, M.Pd.I",
+      stat: { nikah: 35, masjid: 13, majelis: 202, bimwin: 63, musala: 158 }
+    },
+"KUA Juntinyuat": {
+      kode: "3212111",
+      alamat: "Jl. Raya Juntinyuat No. 6",
+      email: "kuajunti@gmail.com",
+      kepala: "H. Mashadi, S.Ag MM",
+      stat: { nikah: 55, masjid: 31, majelis: 242, bimwin: 66, musala: 252 }
+    },
+"KUA Sliyeg": {
+      kode: "3212121",
+      alamat: "Jalan Siliwangi No. 133 Desa Sliyeg",
+      email: "mohderabinaila@yahoo.com",
+      kepala: "H. Muhson Ahmad, S.Ag.,M.H.I",
+      stat: { nikah: 29, masjid: 23, majelis: 207, bimwin: 159, musala: 218 }
+    },
+"KUA Jatibarang": {
+      kode: "3212131",
+      alamat: "Jl. Raya Kebulen Jatisawitlor No. 927 Jatibarang",
+      email: "kuakec.jatibarang@yahoo.com",
+      kepala: "H. Abdul Karim, S.Ag., M.Pd.",
+      stat: { nikah: 38, masjid: 28, majelis: 191, bimwin: 125, musala: 201 }
+    },
+"KUA Balongan": {
+      kode: "3212141",
+      alamat: "Jl. Raya Tegalurung KM. 06 No.365 Balongan",
+      email: "kuabalongan123@gmail.com",
+      kepala: "H. Nurudin, S.Ag, M.H.I",
+      stat: { nikah: 29, masjid: 16, majelis: 116, bimwin: 58, musala: 94 }
+    },
+"KUA Indramayu": {
+      kode: "3212151",
+      alamat: "JL. Wiralodra NO 9/E Kel. Lemahabang",
+      email: "kua_indramayu@yahoo.com",
+      kepala: "H.Darmawan Sugiharto",
+      stat: { nikah: 78, masjid: 42, majelis: 128, bimwin: 106, musala: 103 }
+    },
+"KUA Sindang": {
+      kode: "3212161",
+      alamat: "Jl. Singalodra No. 4 Sindang",
+      email: "sindangkua84@gmail.com",
+      kepala: "Drs. Burhanuddin Hidayat",
+      stat: { nikah: 35, masjid: 66, majelis: 125, bimwin: 71, musala: 175 }
+    },
+    "KUA Cantigi": {
+      kode: "3212171",
+      alamat: "Jl. Raya Cantigi Kulon",
+      email: "kuacantigi@gmail.com",
+      kepala: "H. Guproni, S.Sos., M.H.",
+      stat: { nikah: 26, masjid: 14, majelis: 89, bimwin: 42, musala: 89 }
+    },
+"KUA Lohbener": {
+      kode: "3212181",
+      alamat: "Jl. Raya Lohbener No. 10",
+      email: "kualohbener@yahoo.com",
+      kepala: "H. Ahmad Maufur, M.Pd.I",
+      stat: { nikah: 27, masjid: 12, majelis: 168, bimwin: 143, musala: 181 }
+    },
+"KUA Arahan": {
+      kode: "3212191",
+      alamat: "Jl. Raya Cidempet Arahan, Bandos RT 09 RW 02",
+      email: "kuakec.arahan@gmail.com",
+      kepala: "H. Ibnul Mubarok, S.Ag., M.H.I.",
+      stat: { nikah: 18, masjid: 14, majelis: 85, bimwin: 45, musala: 100 }
+    },
+"KUA Losarang": {
+      kode: "3212201",
+      alamat: "Jl. Turangga Bahari No. 2 Jangga Losarang",
+      email: "kualosarang@yahoo.com",
+      kepala: "Dani, S.Ag.",
+      stat: { nikah: 31, masjid: 21, majelis: 103, bimwin: 24, musala: 145 }
+    },
+"KUA Kandanghaur": {
+      kode: "3212211",
+      alamat: "Jl. Raya Ilir No. 14 Kandanghaur",
+      email: "kua.kdh@gmail.com",
+      kepala: "H. Suyatno, S.H.I",
+      stat: { nikah: 52, masjid: 36, majelis: 161, bimwin: 55, musala: 78 }
+    },
+"KUA Bongas": {
+      kode: "3212221",
+      alamat: "Jl. Raya Kertajaya No. 2 Bongas",
+      email: "balainikahbongasindramayu@yahoo.com",
+      kepala: "Drs. H. Walid",
+      stat: { nikah: 26, masjid: 27, majelis: 127, bimwin: 56, musala: 53 }
+    },
+"KUA Anjatan": {
+      kode: "3212231",
+      alamat: "Jl. Raya Cilandak No. 31 Anjatan",
+      email: "kua_anjatanreport@yahoo.com",
+      kepala: "Ali Aleh Alimi, S.Pd.I",
+      stat: { nikah: 34, masjid: 41, majelis: 243, bimwin: 83, musala: 189 }
+    },
+"KUA Sukra": {
+      kode: "3212241",
+      alamat: "Jl. Raya Pantura, Bogeg 005/001",
+      email: "kuasukraindramayu@gmail.com",
+      kepala: "Nanang Sahroni, S. Sy",
+      stat: { nikah: 25, masjid: 21, majelis: 188, bimwin: 12, musala: 146 }
+    },
+"KUA Gantar": {
+      kode: "3212251",
+      alamat: "Jalan Raya Gantar KM. 07",
+      email: "kuagantar28@gmail.com",
+      kepala: "H. M. Kosim, S.Ag. M.SI",
+      stat: { nikah: 39, masjid: 58, majelis: 105, bimwin: 55, musala: 55 }
+    },
+"KUA Terisi": {
+      kode: "3212261",
+      alamat: "Jalan Raya Rajasinga No.30 Terisi",
+      email: "kuaterisi27gmail.com",
+      kepala: "Muhammad Ibnul Hakim, S.FIL.I",
+      stat: { nikah: 41, masjid: 58, majelis: 195, bimwin: 18, musala: 147 }
+    },
+"KUA Sukagumiwang": {
+      kode: "3212271",
+      alamat: "Jl. Raya Sukagumiwang",
+      email: "kuasukagumiwang@gmail.com",
+      kepala: "Drs. H. Abdul Haris",
+      stat: { nikah: 28, masjid: 30, majelis: 152, bimwin: 72, musala: 159 }
+    },
+"KUA Kedokan Bunder": {
+      kode: "3212281",
+      alamat: "Jl. Raya Cangkingan Km 3,5",
+      email: "kua_kedokanbunder@yahoo.com",
+      kepala: "Saefudin Zuhri, S.Ag",
+      stat: { nikah: 24, masjid: 7, majelis: 118, bimwin: 30, musala: 0 }
+    },
+"KUA Pasekan": {
+      kode: "3212291",
+      alamat: "Jl. Pattimura No. 203 Karanganyar Pasekan",
+      email: "kuapasekan31@gmail.com",
+      kepala: "Muhammad Aminudin, M.H.I",
+      stat: { nikah: 35, masjid: 14, majelis: 59, bimwin: 43, musala: 73 }
+    },
+"KUA Tukdana": {
+      kode: "3212301",
+      alamat: "Jalan Raya Karangkerta NO. 06 Rt 03 Rw 02 Karangkerta",
+      email: "KuaTukdanaindramayu@gmail.com",
+      kepala: "Wahidi, S.Ag.",
+      stat: { nikah: 42, masjid: 17, majelis: 196, bimwin: 32, musala: 165 }
+    },
+"KUA Patrol": {
+      kode: "3212311",
+      alamat: "Jl. Raya Patrol Km. 46",
+      email: "layanankuapatrol@gmail.com",
+      kepala: "Mohder, S.Ag.,M.H.I",
+      stat: { nikah: 27, masjid: 14, majelis: 12, bimwin: 23, musala: 73 }
+    }
+  };
+
+  // Helper untuk isi teks dengan fallback
+  const setTxt = (id, val, fallback="Data belum tersedia") =>
+    document.getElementById(id).textContent = (val && String(val).trim()) || fallback;
+
+  const modal = document.getElementById('kuaModal');
+
+  // Buka modal + populate
+  document.querySelectorAll('.kua-card').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const name = btn.dataset.name;
+      const d = KUA_DATA[name] || {};
+      document.getElementById('kuaModalTitle').textContent = name || 'Data KUA';
+
+      setTxt('mKode',   d.kode);
+      setTxt('mAlamat', d.alamat);
+      setTxt('mEmail',  d.email);
+      setTxt('mKepala', d.kepala);
+
+      const s = d.stat || {};
+      setTxt('mNikah',  s.nikah,  '-');
+      setTxt('mMasjid', s.masjid, '-');
+      setTxt('mMajelis',s.majelis,'-');
+      setTxt('mBimwin', s.bimwin, '-');
+      setTxt('mMusala', s.musala, '-');
+
+      modal.classList.add('show');
+      modal.setAttribute('aria-hidden','false');
+    });
+  });
+
+  // Tutup modal (klik backdrop/btn/ESC)
+  modal.addEventListener('click', (e)=>{
+    if(e.target.dataset.close === 'true'){ closeModal(); }
+  });
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape' && modal.classList.contains('show')) closeModal();
+  });
+  function closeModal(){
+    modal.classList.remove('show');
+    modal.setAttribute('aria-hidden','true');
+  }
+</script>
+<!-- ====== END DATA KUA ====== -->
+
+
+
+  <footer id="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="copyright-text">
+            <p>KEMENTERIAN AGAMA KABUPATEN INDRAMAYU<br>2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+      // Deteksi apakah pengguna menggunakan perangkat mobile
+      function isMobile() {
+        return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      }
+
+      // Tambahkan event listener untuk setiap tombol
+      document.getElementById('facebook-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (isMobile()) {
+          window.location.href = "fb://page/100063865556073"; // ID halaman FB Indramayu
+          setTimeout(() => window.location.href = "https://www.facebook.com/kantorkemenagindramayu?locale=id_ID", 500);
+        } else {
+          window.open("https://www.facebook.com/kantorkemenagindramayu?locale=id_ID", "_blank");
+        }
+      });
+
+      document.getElementById('instagram-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (isMobile()) {
+          window.location.href = "instagram://user?username=kemenagindramayu";
+          setTimeout(() => window.location.href = "https://www.instagram.com/kemenagindramayu/", 500);
+        } else {
+          window.open("https://www.instagram.com/kemenagindramayu/", "_blank");
+        }
+      });
+
+      document.getElementById('tiktok-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (isMobile()) {
+          window.location.href = "snssdk1128://user/profile/7357149978224590854"; // TikTok app
+          setTimeout(() => window.location.href = "https://www.tiktok.com/@kemenag_indramayu?lang=id-ID", 500);
+        } else {
+          window.open("https://www.tiktok.com/@kemenag_indramayu?lang=id-ID", "_blank");
+        }
+      });
+
+      document.getElementById('youtube-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (isMobile()) {
+          window.location.href = "vnd.youtube://channel/UC8uMVR_FzN1YbQYt6NwR5VA"; // YouTube deep link (channel Kemenag Indramayu)
+          setTimeout(() => window.location.href = "https://www.youtube.com/@KantorKemenagIndramayu", 500);
+        } else {
+          window.open("https://www.youtube.com/@KantorKemenagIndramayu", "_blank");
+        }
+      });
+ </script>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const triggers = document.querySelectorAll('.nav .dropdown > .dropbtn');
+
+  function closeAll(except) {
+    document.querySelectorAll('.nav .dropdown.active').forEach(li => {
+      if (li !== except) li.classList.remove('active');
+    });
+  }
+
+  triggers.forEach(btn => {
+    const li = btn.closest('.dropdown');
+    if (!li) return;
+
+    // Aksesibilitas
+    btn.setAttribute('aria-haspopup', 'true');
+    btn.setAttribute('aria-expanded', 'false');
+
+    // klik/tap untuk toggle
+    ['click', 'touchstart'].forEach(evt => {
+      btn.addEventListener(evt, function (e) {
+        e.preventDefault();      // jangan langsung pindah halaman
+        e.stopPropagation();     // jangan kena handler luar
+        const isOpen = li.classList.contains('active');
+        closeAll(li);
+        li.classList.toggle('active', !isOpen);
+        btn.setAttribute('aria-expanded', String(!isOpen));
+      }, { passive: false });
+    });
+  });
+
+  // klik di luar nav -> tutup
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.nav')) closeAll();
+  });
+});
+</script>
+
+<script>
+  // Menu Dropdown Toggle (tanpa ubah display jadi block; kita pakai class .open)
+  (function($){
+      if ($('.menu-trigger').length) {
+        $('.menu-trigger').on('click', function () {
+          $(this).toggleClass('active');
+          const $main = $('.header-area .main-nav');
+          const $nav  = $main.find('.nav');
+          const open  = !$main.hasClass('open');
+
+          $main.toggleClass('open', open);
+
+          if (open) {
+            $nav.stop(true, true).slideDown(0, function () {
+              this.style.display = 'flex';        // paksa inline flex
+              this.style.flexDirection = 'column';
+              this.style.alignItems = 'stretch';
+            });
+          } else {
+            $nav.stop(true, true).slideUp(200, function () {
+              this.style.display = '';            // bersihkan agar desktop kembali normal
+              this.style.flexDirection = '';
+              this.style.alignItems = '';
+            });
+          }
+        });
+      }
+
+
+    // Scroll elevator (tetap, plus tutup menu di mobile)
+    $('.scroll-to-section a[href*=\\#]:not([href=\\#])').on('click', function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          var width = $(window).width();
+          if (width < 991) {
+            $('.menu-trigger').removeClass('active');
+            $('.header-area .main-nav').removeClass('open');
+            $('.header-area .main-nav .nav').stop(true,true).slideUp(200);
+          }
+          $('html,body').animate({ scrollTop: (target.offset().top) + 1 }, 700);
+          return false;
+        }
+      }
+    });
+  })(jQuery);
+</script>
+
+<script>
+// deteksi perubahan style display pada .nav
+const nav = document.querySelector('.header-area .main-nav .nav');
+
+if (nav) {
+  const observer = new MutationObserver(() => {
+    const current = nav.style.display;
+    // jika jQuery memberi style="display:block"
+    if (current === 'block') {
+      nav.style.display = 'flex';
+      nav.style.flexDirection = 'column';
+      nav.style.alignItems = 'stretch';
+    }
+  });
+
+  // amati setiap perubahan atribut style
+  observer.observe(nav, { attributes: true, attributeFilter: ['style'] });
+}
+</script>
+
+  <!-- Scripts: use local files that exist under /vendor and /assets -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/owl-carousel.js"></script>
+  <script src="../assets/js/animation.js"></script>
+  <script src="../assets/js/imagesloaded.js"></script>
+  <script src="../assets/js/popup.js"></script>
+  <script src="../assets/js/custom.js"></script>
+
+  <a href="https://wa.me/62881023554011?text=Assalamualaikum%20Warahmatullahi%20Wabarakatuh%20Hi%20Admin%20SIGAP%2C%0APerkenalkan%20saya%0ANama%20%3A%20%0Aingin%20bertanya" target="_blank" class="floating-btn">
+    <img src="../assets/images/askme.png" alt="Ask Me" />
+  </a>
+</body>
+</html>

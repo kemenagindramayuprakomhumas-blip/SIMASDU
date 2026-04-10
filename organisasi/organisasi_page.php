@@ -1,0 +1,584 @@
+<?php
+// Plain PHP version converted from Laravel Blade (no framework dependencies)
+?><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portal resmi Kementerian Agama Kabupaten Indramayu">
+    <meta name="author" content="Kemenag Indramayu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="data:,">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Central Website KEMENTERIAN AGAMA KABUPATEN INDRAMAYU</title>
+
+    <!-- Bootstrap core CSS (local) -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/css/all.css">
+    <link rel="stylesheet" href="../assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="../assets/css/animated.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+
+    <style>
+      .floating-btn {
+        position: fixed;
+        bottom: 30px;   /* tidak terlalu mepet ke bawah */
+        right: 30px;    /* tidak terlalu mepet ke kanan */
+        z-index: 9999;  /* tampil di atas elemen lain */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .floating-btn img {
+        width: 110px;       /* ukuran tombol */
+        height: auto;
+      }
+
+      .floating-btn:hover {
+        transform: scale(1.08);
+      }
+
+      @media (max-width: 768px) {
+        .floating-btn {
+          bottom: 20px;
+          right: 20px;
+        }
+        .floating-btn img {
+          width: 70px;
+        }
+      }
+
+      .misi-list {
+        margin-top: 10px;
+        padding-left: 0;
+      }
+      .misi-list li {
+        list-style: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 17px;
+        font-weight: 600;
+        color: #2a2a2a;
+        line-height: 1.9;
+        margin-bottom: 6px;
+        position: relative;
+        padding-left: 24px; /* jarak kiri agar bullet sejajar */
+      }
+      .misi-list li::before {
+        content: "•";
+        color: #124b2b; /* hijau khas Kemenag */
+        font-weight: 900;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    </style>
+
+  </head>
+  
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="sigap_page.php" class="logo d-flex align-items-center" style="gap: 12px; padding: 20px 0;">
+              <img src="../assets/images/logo.png" alt="Kemenag Logo" style="height: 50px; width: auto;">
+              <div style="line-height: 1.2; color: #064e3b; font-weight: bold; text-align: left;">
+                <div style="font-size: 16px;">KEMENTERIAN AGAMA</div>
+                <div style="font-size: 16px;">KABUPATEN INDRAMAYU</div>
+              </div>
+            </a>
+            <!-- ***** Logo End ***** -->
+
+            <!-- ***** Menu Start ***** -->
+
+            <ul class="nav" >
+              <li><a href="../sigap/sigap_page.php">Halaman SIGAP</a></li>
+              <li><a href="../index.php">Home</a></li>
+              
+              <li class="dropdown">
+                <a href="#Informasi" class="dropbtn">Informasi Kemenag <i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown-content">
+                  <li><a href="../profil/profil_page.php">Profil, Visi & Misi</a></li>
+                  <li><a href="../organisasi/organisasi_page.php">Struktur Organisasi</a></li>
+                  <li><a href="../informasiKUA/informasiKUA_page.php">Informasi KUA</a></li>
+                  <li><a href="../informasiWakaf/informasiWakaf_page.php">Informasi Wakaf</a></li>
+                  <li><a href="../informasiMadrasah/informasiMadrasah_page.php">Informasi Madrasah</a></li>
+                  <li></li>
+                  <li><a href="../informasiPonpes/informasiPonpes_page.php">Informasi Ponpes</a></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>
+                <!-- <div class="gradient-button">
+                  <a id="modal_trigger" href="#modal">
+                    <i class="fa fa-sign-in-alt"></i> Sign In Now
+                  </a>
+                </div> -->
+              </li>
+            </ul>            
+            
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div id="modal" class="popupContainer" style="display:none;">
+    <div class="popupHeader">
+        <span class="header_title">Login</span>
+        <span class="modal_close"><i class="fa fa-times"></i></span>
+    </div>
+
+    <section class="popupBody">
+        <!-- Social Login -->
+        <div class="social_login">
+            <div class="">
+                <a href="#" class="social_box fb">
+                    <span class="icon"><i class="fab fa-facebook"></i></span>
+                    <span class="icon_title">Connect with Facebook</span>
+                </a>
+
+                <a href="#" class="social_box google">
+                    <span class="icon"><i class="fab fa-google-plus"></i></span>
+                    <span class="icon_title">Connect with Google</span>
+                </a>
+            </div>
+
+            <div class="centeredText">
+                <span>Or use your Email address</span>
+            </div>
+
+            <div class="action_btns">
+                <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
+                <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
+            </div>
+        </div>
+
+        <!-- Username & Password Login form -->
+        <div class="user_login">
+            <form>
+                <label>Email / Username</label>
+                <input type="text" />
+                <br />
+
+                <label>Password</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                    <input id="remember" type="checkbox" />
+                    <label for="remember">Remember me on this computer</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                    <div class="one_half last"><a href="#" class="btn btn_red">Login</a></div>
+                </div>
+            </form>
+
+            <a href="#" class="forgot_password">Forgot password?</a>
+        </div>
+
+        <!-- Register Form -->
+        <div class="user_register">
+            <form>
+                <label>Full Name</label>
+                <input type="text" />
+                <br />
+
+                <label>Email Address</label>
+                <input type="email" />
+                <br />
+
+                <label>Password</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                    <input id="send_updates" type="checkbox" />
+                    <label for="send_updates">Send me occasional email updates</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                    <div class="one_half last"><a href="#" class="btn btn_red">Register</a></div>
+                </div>
+            </form>
+        </div>
+    </section>
+  </div>
+  
+
+
+<!-- BAGIAN ALAMAT KANTOR (CARD PUTIH TENGAH) -->
+<div class="sigap-banner wow fadeIn" id="alamat" data-wow-duration="1s" data-wow-delay="0.5s">
+  <div class="container text-center">
+
+    <!-- JUDUL -->
+    <h2 style="font-family:'Calistoga',serif; color:#124b2b; font-weight:800; margin-bottom:5px;">
+      STRUKTUR ORGANISASI
+    </h2>
+    <h5 style="font-family:'Calistoga',serif; color:#198754; font-weight:600; margin-bottom:30px;">
+      Kantor Kementerian Agama Kabupaten Indramayu
+    </h5>
+
+    <!-- GAMBAR -->
+    <div style="margin-bottom:30px;">
+      <img src="../assets/images/strukturorganisasi-image.png"
+           alt="Gedung Kemenag"
+           style="width:100%; height:auto; border-radius:12px;">
+    </div>
+  </div>
+</div>
+
+
+
+<section id="pejabat" class="pejabat-section">
+  <div class="container">
+    <div class="pejabat-title">
+      <h2>NAMA PEJABAT</h2>
+    </div>
+
+    <div class="pejabat-grid">
+      <!-- Pejabat 1 -->
+      <article class="pejabat-card">
+        <div class="pejabat-photo">
+          <img src="../assets/images/pejabat/1.png" alt="Kepala Kantor">
+        </div>
+        <div class="pejabat-info">
+          <h4 class="pejabat-role one-line" title="Kepala Kantor Kementerian Agama Kab. Indramayu">
+            Kepala Kantor Kementerian Agama Kab. Indramayu
+          </h4>
+          <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">Dr. H. AGHUTS MUHAIMIN, S.Pd.I., M.Ag</h5>
+          <h5 class="pejabat-nip one-line" title="NIP: 197611222006041009">NIP: 197611222006041009</h5>
+        </div>
+      </article>
+
+
+      <!-- Pejabat 2 -->
+      <article class="pejabat-card">
+        <div class="pejabat-photo">
+          <img src="../assets/images/pejabat/2.png" alt="Kepala Kantor">
+        </div>
+        <div class="pejabat-info">
+          <h4 class="pejabat-role one-line" title="Kepala Kantor Kementerian Agama Kab. Indramayu">
+            Kepala Subbag Tata Usaha
+          </h4>
+          <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">H. AAN FATHUL ANWAR, SH., M.Pd.I</h5>
+          <h5 class="pejabat-nip one-line" title="NIP: 197611222006041009">NIP: 196807211993031002</h5>
+        </div>
+      </article>
+
+
+      <!-- Pejabat 3 -->
+      <article class="pejabat-card">
+        <div class="pejabat-photo">
+          <img src="../assets/images/pejabat/3.png" alt="Kepala Kantor">
+        </div>
+        <div class="pejabat-info">
+          <h4 class="pejabat-role one-line" title="Kepala Kantor Kementerian Agama Kab. Indramayu">
+            Plt. Kepala Seksi Pendidikan Madrasah
+          </h4>
+          <!-- <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">H. SLAMET EDI, MA</h5> -->
+          <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">H. SLAMET EDI, MA</h5>
+          <h5 class="pejabat-nip one-line" title="NIP: 197611222006041009">NIP: 197010252003121001</h5>
+        </div>
+      </article>
+
+            <!-- Pejabat 3 -->
+      <article class="pejabat-card">
+        <div class="pejabat-photo">
+          <img src="../assets/images/pejabat/3A.png" alt="Kepala Kantor">
+        </div>
+        <div class="pejabat-info">
+          <h4 class="pejabat-role one-line" title="Kepala Kantor Kementerian Agama Kab. Indramayu">
+            Kepala Seksi Pendidikan Diniyah dan Pondok Pesantren
+          </h4>
+          <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">H. SLAMET EDI, MA</h5>
+          <h5 class="pejabat-nip one-line" title="NIP: 197611222006041009">NIP: 197010252003121001</h5>
+        </div>
+      </article>
+
+    </div>
+    
+    <div class="pejabat-grid">
+      <!-- Pejabat 1 -->
+      <article class="pejabat-card">
+        <div class="pejabat-photo">
+          <img src="../assets/images/pejabat/4.png" alt="Kepala Kantor">
+        </div>
+        <div class="pejabat-info">
+          <h4 class="pejabat-role one-line" title="Kepala Kantor Kementerian Agama Kab. Indramayu">
+            Kepala Seksi Pendidikan Agama Islam
+          </h4>
+          <!-- <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">H. WAHYUDIN, ST., M.Pd</h5> -->
+          <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">H. WAHYUDIN, ST., M.Pd</h5>
+          <h5 class="pejabat-name one-line" title="NIP: 197611222006041009">NIP: 198010052009011012</h5>
+        </div>
+      </article>
+
+
+      <!-- Pejabat 2 -->
+      <article class="pejabat-card">
+        <div class="pejabat-photo">
+          <img src="../assets/images/pejabat/5.png" alt="Kepala Kantor">
+        </div>
+        <div class="pejabat-info">
+          <h4 class="pejabat-role one-line" title="Kepala Kantor Kementerian Agama Kab. Indramayu">
+            Kepala Seksi Penyelenggaraan Haji Dan Umrah
+          </h4>
+          <!-- <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">Drs. H. EFFENDY, M.H.I</h5> -->
+          <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">Drs. H. EFFENDY, M.H.I</h5>
+          <h5 class="pejabat-nip one-line" title="NIP: 197611222006041009">NIP: 196809152002121001</h5>
+        </div>
+      </article>
+
+
+      <!-- Pejabat 3 -->
+      <article class="pejabat-card">
+        <div class="pejabat-photo">
+          <img src="../assets/images/pejabat/6.png" alt="Kepala Kantor">
+        </div>
+        <div class="pejabat-info">
+          <h4 class="pejabat-role one-line" title="Kepala Kantor Kementerian Agama Kab. Indramayu">
+            Kepala Seksi Bimas Islam
+          </h4>
+          <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">H. ROSIDI, S,Ag., MM</h5>
+          <h5 class="pejabat-nip one-line" title="NIP: 197611222006041009">NIP: 196812301994031003</h5>
+        </div>
+      </article>
+
+      <!-- Pejabat 3 -->
+      <article class="pejabat-card">
+        <div class="pejabat-photo">
+          <img src="../assets/images/pejabat/7.png" alt="Kepala Kantor">
+        </div>
+        <div class="pejabat-info">
+          <h4 class="pejabat-role one-line" title="Kepala Kantor Kementerian Agama Kab. Indramayu">
+            Penyelenggara Zakat Wakaf
+          </h4>
+          <!-- <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">HH. MUHAMMAD AMIN, SE., M.Si</h5> -->
+          <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">H. MUHAMMAD AMIN, SE., M.Si</h5>
+          <h5 class="pejabat-nip one-line" title="NIP: 197611222006041009">NIP: 197304162011011001</h5>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+  <footer id="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="copyright-text">
+            <p>KEMENTERIAN AGAMA KABUPATEN INDRAMAYU<br>2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+      // Deteksi apakah pengguna menggunakan perangkat mobile
+      function isMobile() {
+        return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      }
+
+      // Tambahkan event listener untuk setiap tombol
+      document.getElementById('facebook-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (isMobile()) {
+          window.location.href = "fb://page/100063865556073"; // ID halaman FB Indramayu
+          setTimeout(() => window.location.href = "https://www.facebook.com/kantorkemenagindramayu?locale=id_ID", 500);
+        } else {
+          window.open("https://www.facebook.com/kantorkemenagindramayu?locale=id_ID", "_blank");
+        }
+      });
+
+      document.getElementById('instagram-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (isMobile()) {
+          window.location.href = "instagram://user?username=kemenagindramayu";
+          setTimeout(() => window.location.href = "https://www.instagram.com/kemenagindramayu/", 500);
+        } else {
+          window.open("https://www.instagram.com/kemenagindramayu/", "_blank");
+        }
+      });
+
+      document.getElementById('tiktok-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (isMobile()) {
+          window.location.href = "snssdk1128://user/profile/7357149978224590854"; // TikTok app
+          setTimeout(() => window.location.href = "https://www.tiktok.com/@kemenag_indramayu?lang=id-ID", 500);
+        } else {
+          window.open("https://www.tiktok.com/@kemenag_indramayu?lang=id-ID", "_blank");
+        }
+      });
+
+      document.getElementById('youtube-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (isMobile()) {
+          window.location.href = "vnd.youtube://channel/UC8uMVR_FzN1YbQYt6NwR5VA"; // YouTube deep link (channel Kemenag Indramayu)
+          setTimeout(() => window.location.href = "https://www.youtube.com/@KantorKemenagIndramayu", 500);
+        } else {
+          window.open("https://www.youtube.com/@KantorKemenagIndramayu", "_blank");
+        }
+      });
+ </script>
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const triggers = document.querySelectorAll('.nav .dropdown > .dropbtn');
+
+  function closeAll(except) {
+    document.querySelectorAll('.nav .dropdown.active').forEach(li => {
+      if (li !== except) li.classList.remove('active');
+    });
+  }
+
+  triggers.forEach(btn => {
+    const li = btn.closest('.dropdown');
+    if (!li) return;
+
+    // Aksesibilitas
+    btn.setAttribute('aria-haspopup', 'true');
+    btn.setAttribute('aria-expanded', 'false');
+
+    // klik/tap untuk toggle
+    ['click', 'touchstart'].forEach(evt => {
+      btn.addEventListener(evt, function (e) {
+        e.preventDefault();      // jangan langsung pindah halaman
+        e.stopPropagation();     // jangan kena handler luar
+        const isOpen = li.classList.contains('active');
+        closeAll(li);
+        li.classList.toggle('active', !isOpen);
+        btn.setAttribute('aria-expanded', String(!isOpen));
+      }, { passive: false });
+    });
+  });
+
+  // klik di luar nav -> tutup
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.nav')) closeAll();
+  });
+});
+</script>
+
+<script>
+  // Menu Dropdown Toggle (tanpa ubah display jadi block; kita pakai class .open)
+  (function($){
+      if ($('.menu-trigger').length) {
+        $('.menu-trigger').on('click', function () {
+          $(this).toggleClass('active');
+          const $main = $('.header-area .main-nav');
+          const $nav  = $main.find('.nav');
+          const open  = !$main.hasClass('open');
+
+          $main.toggleClass('open', open);
+
+          if (open) {
+            $nav.stop(true, true).slideDown(0, function () {
+              this.style.display = 'flex';        // paksa inline flex
+              this.style.flexDirection = 'column';
+              this.style.alignItems = 'stretch';
+            });
+          } else {
+            $nav.stop(true, true).slideUp(200, function () {
+              this.style.display = '';            // bersihkan agar desktop kembali normal
+              this.style.flexDirection = '';
+              this.style.alignItems = '';
+            });
+          }
+        });
+      }
+
+
+    // Scroll elevator (tetap, plus tutup menu di mobile)
+    $('.scroll-to-section a[href*=\\#]:not([href=\\#])').on('click', function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          var width = $(window).width();
+          if (width < 991) {
+            $('.menu-trigger').removeClass('active');
+            $('.header-area .main-nav').removeClass('open');
+            $('.header-area .main-nav .nav').stop(true,true).slideUp(200);
+          }
+          $('html,body').animate({ scrollTop: (target.offset().top) + 1 }, 700);
+          return false;
+        }
+      }
+    });
+  })(jQuery);
+</script>
+
+<script>
+// deteksi perubahan style display pada .nav
+const nav = document.querySelector('.header-area .main-nav .nav');
+
+if (nav) {
+  const observer = new MutationObserver(() => {
+    const current = nav.style.display;
+    // jika jQuery memberi style="display:block"
+    if (current === 'block') {
+      nav.style.display = 'flex';
+      nav.style.flexDirection = 'column';
+      nav.style.alignItems = 'stretch';
+    }
+  });
+
+  // amati setiap perubahan atribut style
+  observer.observe(nav, { attributes: true, attributeFilter: ['style'] });
+}
+</script>
+
+  <!-- Scripts: use local files that exist under /vendor and /assets -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/owl-carousel.js"></script>
+  <script src="../assets/js/animation.js"></script>
+  <script src="../assets/js/imagesloaded.js"></script>
+  <script src="../assets/js/popup.js"></script>
+  <script src="../assets/js/custom.js"></script>
+
+  <a href="https://wa.me/62881023554011?text=Assalamualaikum%20Warahmatullahi%20Wabarakatuh%20Hi%20Admin%20SIGAP%2C%0APerkenalkan%20saya%0ANama%20%3A%20%0Aingin%20bertanya" target="_blank" class="floating-btn">
+    <img src="../assets/images/askme.png" alt="Ask Me" />
+  </a>
+</body>
+</html>
