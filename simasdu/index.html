@@ -1,0 +1,375 @@
+<?php
+// Plain PHP version converted from Laravel Blade (no framework dependencies)
+?><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portal resmi Kementerian Agama Kabupaten Indramayu">
+    <meta name="author" content="Kemenag Indramayu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>Central Website KEMENTERIAN AGAMA KABUPATEN INDRAMAYU</title>
+
+    <!-- Bootstrap core CSS (local) -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+ <style>
+      .floating-btn {
+        position: fixed;
+        bottom: 30px;   /* tidak terlalu mepet ke bawah */
+        right: 30px;    /* tidak terlalu mepet ke kanan */
+        z-index: 9999;  /* tampil di atas elemen lain */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .floating-btn img {
+        width: 110px;       /* ukuran tombol */
+        height: auto;
+      }
+
+      .floating-btn:hover {
+        transform: scale(1.08);
+      }
+
+      @media (max-width: 768px) {
+        .floating-btn {
+          bottom: 20px;
+          right: 20px;
+        }
+        .floating-btn img {
+          width: 70px;
+        }
+      }
+    </style>
+
+  </head>
+  
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.php" class="logo d-flex align-items-center" style="gap: 12px; padding: 20px 0;">
+              <img src="assets/images/logo.png" alt="Kemenag Logo" style="height: 50px; width: auto;">
+              <div style="line-height: 1.2; color: #064e3b; font-weight: bold; text-align: left;">
+                <div style="font-size: 16px;">KEMENTERIAN AGAMA</div>
+                <div style="font-size: 16px;">KABUPATEN INDRAMAYU</div>
+              </div>
+            </a>
+            <!-- ***** Logo End ***** -->
+
+            <!-- ***** Menu Start ***** -->
+
+            <ul class="nav" >
+              <li class="scroll-to-section"><a href="#top" class="active">Halaman Simasdu</a></li>
+              <li><a href="../index.php">Home</a></li>
+              <li class="scroll-to-section"><a href="#services">Layanan Pengaduan</a></li>
+              <li><a href="../sigap/sigap_page.php">SIGAP</a></li>
+              <li>
+                <!-- <div class="gradient-button">
+                  <a id="modal_trigger" href="#modal">
+                    <i class="fa fa-sign-in-alt"></i> Sign In Now
+                  </a>
+                </div> -->
+              </li>
+            </ul>            
+
+
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>Selamat Datang di Sistem Informasi Masyarakat dan Pengaduan (SIMASDU)</h2>
+                    <p>Merupakan Aplikasi Pengaduan dan Kepuasan Pelayanan di setiap seksi dan bagian di kantor kementerian agama kabupaten indramayu</p>
+                  </div>
+                  <div class="col-lg-12">
+                    <!-- <div class="white-button first-button scroll-to-section">
+                      <a href="#contact">Free Quote <i class="fab fa-apple"></i></a>
+                    </div>
+                    <div class="white-button scroll-to-section">
+                      <a href="#contact">Free Quote <i class="fab fa-google-play"></i></a>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/simasdu1.png" alt="Slider Decoration">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ***** Services (Cards) ***** -->
+  <div id="services" class="services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>
+              Berikut ini merupakan layanan pengaduan dan survei kepuasan layanan untuk setiap seksi dan bagian di<br>
+              <span style="font-weight:bold;"><em>Kementerian Agama Kabupaten Indramayu</em></span>
+            </h4>
+          </div>
+        </div>
+      </div>
+      
+<div class="row">
+  <!-- 1 -->
+  <div class="col-12 col-sm-6 col-lg-3 d-flex col-card" style="margin: 20px 0;">
+    <div class="service-item umum-service h-100 d-flex flex-column w-100">
+      <div class="icon"></div>
+      <h4>Sub Bagian Perencanaan &amp; Umum</h4>
+      <p>Mengelola perencanaan, ketatausahaan, dan urusan umum di lingkungan Kemenag Indramayu.</p>
+      <div class="text-button mt-auto">
+        <a href="https://forms.gle/hiWSyvAQWFbGdGyX8">Isi Pengaduan & Survei <i  class="fa fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="col-12 col-sm-6 col-lg-3 d-flex col-card" style="margin: 20px 0;">
+    <div class="service-item kepegawaian-service h-100 d-flex flex-column w-100">
+      <div class="icon"></div>
+      <h4>Sub Bagian Kepegawaian</h4>
+      <p>Mengatur administrasi kepegawaian, mutasi, dan pembinaan ASN di Kemenag Indramayu.</p>
+      <div class="text-button mt-auto">
+        <a href="https://forms.gle/foofskjpbKabARHW9">Isi Pengaduan & Survei <i  class="fa fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="col-12 col-sm-6 col-lg-3 d-flex col-card" style="margin: 20px 0;">
+    <div class="service-item keuangan-service h-100 d-flex flex-column w-100">
+      <div class="icon"></div>
+      <h4>Sub Bagian Keuangan</h4>
+      <p>Mengelola anggaran, pelaporan keuangan, dan belanja operasional instansi.</p>
+      <div class="text-button mt-auto">
+        <a href="https://forms.gle/aTNJfcz64BALg6V88">Isi Pengaduan & Survei <i  class="fa fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="col-12 col-sm-6 col-lg-3 d-flex col-card" style="margin: 20px 0;">
+    <div class="service-item penmad-service h-100 d-flex flex-column w-100">
+      <div class="icon"></div>
+      <h4>Seksi Pendidikan Madrasah</h4>
+      <p>Menyelenggarakan pembinaan dan layanan pendidikan madrasah.</p>
+      <div class="text-button mt-auto">
+        <a href="https://forms.gle/fBag3ETrquKVthJm7">Isi Pengaduan & Survei <i  class="fa fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="col-12 col-sm-6 col-lg-3 d-flex col-card" style="margin: 20px 0;">
+    <div class="service-item pontren-service h-100 d-flex flex-column w-100">
+      <div class="icon"></div>
+      <h4>Seksi Pendidikan Diniyah &amp; Pontren</h4>
+      <p>Mengelola pendidikan diniyah, pesantren, dan lembaga keagamaan nonformal.</p>
+      <div class="text-button mt-auto">
+        <a href="https://forms.gle/eHzs7KYB4rGx4pJf6">Isi Pengaduan & Survei <i  class="fa fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6 -->
+  <div class="col-12 col-sm-6 col-lg-3 d-flex col-card" style="margin: 20px 0;">
+    <div class="service-item pais-service h-100 d-flex flex-column w-100">
+      <div class="icon"></div>
+      <h4>Seksi Pendidikan Agama Islam</h4>
+      <p>Penyelenggaraan pendidikan agama Islam pada sekolah umum.</p>
+      <div class="text-button mt-auto">
+        <a href="https://forms.gle/p9uvkGtxkRLUnah86">Isi Pengaduan & Survei <i  class="fa fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7 -->
+  <!-- <div class="col-12 col-sm-6 col-lg-3 d-flex col-card" style="margin: 20px 0;">
+    <div class="service-item phu-service h-100 d-flex flex-column w-100">
+      <div class="icon"></div>
+      <h4>Seksi Penyelenggaraan Haji &amp; Umroh</h4>
+      <p>Pelayanan dan pembinaan bagi jamaah haji dan umrah Kabupaten Indramayu.</p>
+      <div class="text-button mt-auto">
+        <a href="phu.php">Isi Pengaduan & Survei <i  class="fa fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- 8 -->
+  <div class="col-12 col-sm-6 col-lg-3 d-flex col-card" style="margin: 20px 0;">
+    <div class="service-item bimas-service h-100 d-flex flex-column w-100">
+      <div class="icon"></div>
+      <h4>Seksi Bimas Islam</h4>
+      <p>Menangani pembinaan dan layanan bagi penyuluh serta lembaga keagamaan Islam.</p>
+      <div class="text-button mt-auto">
+        <a href="https://forms.gle/9SkK94rLkVMtKiLa8">Isi Pengaduan & Survei <i  class="fa fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9 -->
+  <div class="col-12 col-sm-6 col-lg-3 d-flex col-card" style="margin: 20px 0;">
+    <div class="service-item pzw-service h-100 d-flex flex-column w-100">
+      <div class="icon"></div>
+      <h4>Penyelenggara Zakat &amp; Wakaf</h4>
+      <p>Mengelola kebijakan dan pembinaan pengelolaan zakat dan wakaf di daerah.</p>
+      <div class="text-button mt-auto">
+        <a href="https://forms.gle/GAMLd3ZX2sGJTZHT7">Isi Pengaduan & Survei <i  class="fa fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+    </div><!-- /container -->
+  </div><!-- /services -->
+
+  <footer id="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="copyright-text">
+            <p>KEMENTERIAN AGAMA KABUPATEN INDRAMAYU<br>2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<script>
+  // Menu Dropdown Toggle (tanpa ubah display jadi block; kita pakai class .open)
+  (function($){
+      if ($('.menu-trigger').length) {
+        $('.menu-trigger').on('click', function () {
+          $(this).toggleClass('active');
+          const $main = $('.header-area .main-nav');
+          const $nav  = $main.find('.nav');
+          const open  = !$main.hasClass('open');
+
+          $main.toggleClass('open', open);
+
+          if (open) {
+            $nav.stop(true, true).slideDown(0, function () {
+              this.style.display = 'flex';        // paksa inline flex
+              this.style.flexDirection = 'column';
+              this.style.alignItems = 'stretch';
+            });
+          } else {
+            $nav.stop(true, true).slideUp(200, function () {
+              this.style.display = '';            // bersihkan agar desktop kembali normal
+              this.style.flexDirection = '';
+              this.style.alignItems = '';
+            });
+          }
+        });
+      }
+
+
+    // Scroll elevator (tetap, plus tutup menu di mobile)
+    $('.scroll-to-section a[href*=\\#]:not([href=\\#])').on('click', function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          var width = $(window).width();
+          if (width < 991) {
+            $('.menu-trigger').removeClass('active');
+            $('.header-area .main-nav').removeClass('open');
+            $('.header-area .main-nav .nav').stop(true,true).slideUp(200);
+          }
+          $('html,body').animate({ scrollTop: (target.offset().top) + 1 }, 700);
+          return false;
+        }
+      }
+    });
+  })(jQuery);
+</script>
+
+<script>
+// deteksi perubahan style display pada .nav
+const nav = document.querySelector('.header-area .main-nav .nav');
+
+if (nav) {
+  const observer = new MutationObserver(() => {
+    const current = nav.style.display;
+    // jika jQuery memberi style="display:block"
+    if (current === 'block') {
+      nav.style.display = 'flex';
+      nav.style.flexDirection = 'column';
+      nav.style.alignItems = 'stretch';
+    }
+  });
+
+  // amati setiap perubahan atribut style
+  observer.observe(nav, { attributes: true, attributeFilter: ['style'] });
+}
+</script>
+
+  <!-- Scripts: use local files that exist under /vendor and /assets -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <a href="https://wa.me/62881023554011?text=Assalamualaikum%20Warahmatullahi%20Wabarakatuh%20Hi%20Admin%20SIGAP%2C%0APerkenalkan%20saya%0ANama%20%3A%20%0Aingin%20bertanya
+" target="_blank" class="floating-btn">
+    <img src="assets/images/askme.png" alt="Ask Me" />
+  </a>
+</body>
+</html>
