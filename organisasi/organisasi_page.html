@@ -1,6 +1,4 @@
-<?php
-// Plain PHP version converted from Laravel Blade (no framework dependencies)
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -26,104 +24,6 @@
     <link rel="stylesheet" href="../assets/css/owl.css">
 
     <style>
-
-/* ===== DATA MADRASAH ===== */
-.madrasah-section{
-  padding: 10% 0 90px;
-  background: linear-gradient(180deg, #e6f7ea 0%, #cfe3f2 100%);
-}
-
-.madrasah-title{
-  text-align:center;
-  margin-bottom:32px;
-}
-
-.madrasah-title h2{
-  display:inline-block;
-  padding:14px 32px;
-  background:#fff;
-  border-radius:28px;
-  font-family:'Calistoga',serif;
-  font-weight:800;
-  color:#111;
-  letter-spacing:1px;
-  box-shadow:0 10px 22px rgba(0,0,0,.06);
-  font-size: clamp(28px, 4vw, 46px);
-}
-
-/* grid kartu */
-.madrasah-grid{
-  display:grid;
-  gap:28px;
-  grid-template-columns: repeat(3, 1fr);
-  align-items:stretch;
-}
-
-@media (max-width: 992px){
-  .madrasah-grid{ grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 576px){
-  .madrasah-grid{ grid-template-columns: 1fr; }
-}
-
-/* kartu = anchor */
-.madrasah-card{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  text-decoration:none;
-  border-radius:28px;
-  padding:24px 18px 28px;
-  background: linear-gradient(180deg, rgba(152,187,255,.55) 0%, rgba(187,232,198,.55) 100%);
-  border:3px solid rgba(255,255,255,.8);
-  box-shadow: 0 10px 26px rgba(0,0,0,.08), inset 0 0 0 1px rgba(255,255,255,.35);
-  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-}
-
-.madrasah-card:hover{
-  transform: translateY(-6px);
-  box-shadow: 0 16px 36px rgba(0,0,0,.14);
-  border-color: #ffffff;
-}
-
-/* bulatan angka */
-.madrasah-card-body{
-  width: 235px;
-  height: 235px;
-  max-width: 68vw;
-  max-height: 68vw;
-  border-radius: 50%;
-  background: #fff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  box-shadow: 0 8px 18px rgba(0,0,0,.08);
-}
-
-.madrasah-number{
-  font-family:'Poppins',sans-serif;
-  font-weight:800;
-  color:#111;
-  font-size: clamp(44px, 7vw, 96px);
-  line-height:1;
-}
-
-/* label pill di bawah */
-.madrasah-label{
-  margin-top:18px;
-  background:#fff;
-  color:#111;
-  font-family:'Poppins',sans-serif;
-  font-weight:700;
-  text-align:center;
-  padding:14px 22px;
-  border-radius:38px;
-  box-shadow: 0 10px 22px rgba(0,0,0,.08);
-  font-size: clamp(16px, 2.2vw, 26px);
-  min-width: 230px;
-}
-
-
       .floating-btn {
         position: fixed;
         bottom: 30px;   /* tidak terlalu mepet ke bawah */
@@ -201,7 +101,7 @@
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="sigap_page.php" class="logo d-flex align-items-center" style="gap: 12px; padding: 20px 0;">
+            <a href="sigap_page.html" class="logo d-flex align-items-center" style="gap: 12px; padding: 20px 0;">
               <img src="../assets/images/logo.png" alt="Kemenag Logo" style="height: 50px; width: auto;">
               <div style="line-height: 1.2; color: #064e3b; font-weight: bold; text-align: left;">
                 <div style="font-size: 16px;">KEMENTERIAN AGAMA</div>
@@ -213,19 +113,19 @@
             <!-- ***** Menu Start ***** -->
 
             <ul class="nav" >
-              <li><a href="../sigap/sigap_page.php">Halaman SIGAP</a></li>
-              <li><a href="../index.php">Home</a></li>
+              <li><a href="../sigap/sigap_page.html">Halaman SIGAP</a></li>
+              <li><a href="../index.html">Home</a></li>
               
               <li class="dropdown">
                 <a href="#Informasi" class="dropbtn">Informasi Kemenag <i class="fa fa-caret-down"></i></a>
                 <ul class="dropdown-content">
-                  <li><a href="../profil/profil_page.php">Profil, Visi & Misi</a></li>
-                  <li><a href="../organisasi/organisasi_page.php">Struktur Organisasi</a></li>
-                  <li><a href="../informasiKUA/informasiKUA_page.php">Informasi KUA</a></li>
-                  <li><a href="../informasiWakaf/informasiWakaf_page.php">Informasi Wakaf</a></li>
-                  <li><a href="../informasiMadrasah/informasiMadrasah_page.php">Informasi Madrasah</a></li>
+                  <li><a href="../profil/profil_page.html">Profil, Visi & Misi</a></li>
+                  <li><a href="../organisasi/organisasi_page.html">Struktur Organisasi</a></li>
+                  <li><a href="../informasiKUA/informasiKUA_page.html">Informasi KUA</a></li>
+                  <li><a href="../informasiWakaf/informasiWakaf_page.html">Informasi Wakaf</a></li>
+                  <li><a href="../informasiMadrasah/informasiMadrasah_page.html">Informasi Madrasah</a></li>
                   <li></li>
-                  <li><a href="../informasiPonpes/informasiPonpes_page.php">Informasi Ponpes</a></li>
+                  <li><a href="../informasiPonpes/informasiPonpes_page.html">Informasi Ponpes</a></li>
                   <li></li>
                   <li></li>
                 </ul>
@@ -239,7 +139,6 @@
               </li>
             </ul>            
             
-
             <a class='menu-trigger'>
                 <span>Menu</span>
             </a>
@@ -251,44 +150,250 @@
   </header>
   <!-- ***** Header Area End ***** -->
 
-<section id="data-madrasah" class="madrasah-section">
-  <div class="container">
-
-    <!-- Judul pill -->
-    <div class="madrasah-title">
-      <h2>DATA PONDOK PESANTREN</h2>
+  <div id="modal" class="popupContainer" style="display:none;">
+    <div class="popupHeader">
+        <span class="header_title">Login</span>
+        <span class="modal_close"><i class="fa fa-times"></i></span>
     </div>
 
-    <!-- Grid Kartu -->
-    <div class="madrasah-grid">
+    <section class="popupBody">
+        <!-- Social Login -->
+        <div class="social_login">
+            <div class="">
+                <a href="#" class="social_box fb">
+                    <span class="icon"><i class="fab fa-facebook"></i></span>
+                    <span class="icon_title">Connect with Facebook</span>
+                </a>
 
-      <!-- RA -->
-      <a class="madrasah-card" href="https://docs.google.com/spreadsheets/d/1MSRAuqyqFw_NdGYLVkYIPadx9hcKAHo3/edit?usp=sharing&ouid=113837042151804396775&rtpof=true&sd=true" target="_blank" rel="noopener">
-        <div class="madrasah-card-body">
-          <div class="madrasah-number">180</div>
-        </div>
-        <div class="madrasah-label">Pondok Pesantren</div>
-      </a>
+                <a href="#" class="social_box google">
+                    <span class="icon"><i class="fab fa-google-plus"></i></span>
+                    <span class="icon_title">Connect with Google</span>
+                </a>
+            </div>
 
-      <!-- MI -->
-      <a class="madrasah-card" href="https://docs.google.com/spreadsheets/d/1T54RB0UKQTeQctivN6Vh5F0DoS7Ic1bB/edit?usp=sharing&ouid=113837042151804396775&rtpof=true&sd=true" target="_blank" rel="noopener">
-        <div class="madrasah-card-body">
-          <div class="madrasah-number">1056</div>
-        </div>
-        <div class="madrasah-label">MDT</div>
-      </a>
+            <div class="centeredText">
+                <span>Or use your Email address</span>
+            </div>
 
-      <!-- MTs -->
-      <a class="madrasah-card" href="https://docs.google.com/spreadsheets/d/1KyTGG0a4OBulXJt4EXHKtK0fCMrs7UfS/edit?usp=sharing&ouid=113837042151804396775&rtpof=true&sd=true" target="_blank" rel="noopener">
-        <div class="madrasah-card-body">
-          <div class="madrasah-number">531</div>
+            <div class="action_btns">
+                <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
+                <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
+            </div>
         </div>
-        <div class="madrasah-label">LPQ</div>
-      </a>
+
+        <!-- Username & Password Login form -->
+        <div class="user_login">
+            <form>
+                <label>Email / Username</label>
+                <input type="text" />
+                <br />
+
+                <label>Password</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                    <input id="remember" type="checkbox" />
+                    <label for="remember">Remember me on this computer</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                    <div class="one_half last"><a href="#" class="btn btn_red">Login</a></div>
+                </div>
+            </form>
+
+            <a href="#" class="forgot_password">Forgot password?</a>
+        </div>
+
+        <!-- Register Form -->
+        <div class="user_register">
+            <form>
+                <label>Full Name</label>
+                <input type="text" />
+                <br />
+
+                <label>Email Address</label>
+                <input type="email" />
+                <br />
+
+                <label>Password</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                    <input id="send_updates" type="checkbox" />
+                    <label for="send_updates">Send me occasional email updates</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                    <div class="one_half last"><a href="#" class="btn btn_red">Register</a></div>
+                </div>
+            </form>
+        </div>
+    </section>
+  </div>
+  
+
+
+<!-- BAGIAN ALAMAT KANTOR (CARD PUTIH TENGAH) -->
+<div class="sigap-banner wow fadeIn" id="alamat" data-wow-duration="1s" data-wow-delay="0.5s">
+  <div class="container text-center">
+
+    <!-- JUDUL -->
+    <h2 style="font-family:'Calistoga',serif; color:#124b2b; font-weight:800; margin-bottom:5px;">
+      STRUKTUR ORGANISASI
+    </h2>
+    <h5 style="font-family:'Calistoga',serif; color:#198754; font-weight:600; margin-bottom:30px;">
+      Kantor Kementerian Agama Kabupaten Indramayu
+    </h5>
+
+    <!-- GAMBAR -->
+    <div style="margin-bottom:30px;">
+      <img src="../assets/images/strukturorganisasi-image.png"
+           alt="Gedung Kemenag"
+           style="width:100%; height:auto; border-radius:12px;">
     </div>
   </div>
-</section>
+</div>
 
+
+
+<section id="pejabat" class="pejabat-section">
+  <div class="container">
+    <div class="pejabat-title">
+      <h2>NAMA PEJABAT</h2>
+    </div>
+
+    <div class="pejabat-grid">
+      <!-- Pejabat 1 -->
+      <article class="pejabat-card">
+        <div class="pejabat-photo">
+          <img src="../assets/images/pejabat/1.png" alt="Kepala Kantor">
+        </div>
+        <div class="pejabat-info">
+          <h4 class="pejabat-role one-line" title="Kepala Kantor Kementerian Agama Kab. Indramayu">
+            Kepala Kantor Kementerian Agama Kab. Indramayu
+          </h4>
+          <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">Dr. H. AGHUTS MUHAIMIN, S.Pd.I., M.Ag</h5>
+          <h5 class="pejabat-nip one-line" title="NIP: 197611222006041009">NIP: 197611222006041009</h5>
+        </div>
+      </article>
+
+
+      <!-- Pejabat 2 -->
+      <article class="pejabat-card">
+        <div class="pejabat-photo">
+          <img src="../assets/images/pejabat/2.png" alt="Kepala Kantor">
+        </div>
+        <div class="pejabat-info">
+          <h4 class="pejabat-role one-line" title="Kepala Kantor Kementerian Agama Kab. Indramayu">
+            Kepala Subbag Tata Usaha
+          </h4>
+          <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">H. AAN FATHUL ANWAR, SH., M.Pd.I</h5>
+          <h5 class="pejabat-nip one-line" title="NIP: 197611222006041009">NIP: 196807211993031002</h5>
+        </div>
+      </article>
+
+
+      <!-- Pejabat 3 -->
+      <article class="pejabat-card">
+        <div class="pejabat-photo">
+          <img src="../assets/images/pejabat/3.png" alt="Kepala Kantor">
+        </div>
+        <div class="pejabat-info">
+          <h4 class="pejabat-role one-line" title="Kepala Kantor Kementerian Agama Kab. Indramayu">
+            Plt. Kepala Seksi Pendidikan Madrasah
+          </h4>
+          <!-- <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">H. SLAMET EDI, MA</h5> -->
+          <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">H. SLAMET EDI, MA</h5>
+          <h5 class="pejabat-nip one-line" title="NIP: 197611222006041009">NIP: 197010252003121001</h5>
+        </div>
+      </article>
+
+            <!-- Pejabat 3 -->
+      <article class="pejabat-card">
+        <div class="pejabat-photo">
+          <img src="../assets/images/pejabat/3A.png" alt="Kepala Kantor">
+        </div>
+        <div class="pejabat-info">
+          <h4 class="pejabat-role one-line" title="Kepala Kantor Kementerian Agama Kab. Indramayu">
+            Kepala Seksi Pendidikan Diniyah dan Pondok Pesantren
+          </h4>
+          <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">H. SLAMET EDI, MA</h5>
+          <h5 class="pejabat-nip one-line" title="NIP: 197611222006041009">NIP: 197010252003121001</h5>
+        </div>
+      </article>
+
+    </div>
+    
+    <div class="pejabat-grid">
+      <!-- Pejabat 1 -->
+      <article class="pejabat-card">
+        <div class="pejabat-photo">
+          <img src="../assets/images/pejabat/4.png" alt="Kepala Kantor">
+        </div>
+        <div class="pejabat-info">
+          <h4 class="pejabat-role one-line" title="Kepala Kantor Kementerian Agama Kab. Indramayu">
+            Kepala Seksi Pendidikan Agama Islam
+          </h4>
+          <!-- <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">H. WAHYUDIN, ST., M.Pd</h5> -->
+          <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">H. WAHYUDIN, ST., M.Pd</h5>
+          <h5 class="pejabat-name one-line" title="NIP: 197611222006041009">NIP: 198010052009011012</h5>
+        </div>
+      </article>
+
+
+      <!-- Pejabat 2 -->
+      <article class="pejabat-card">
+        <div class="pejabat-photo">
+          <img src="../assets/images/pejabat/5.png" alt="Kepala Kantor">
+        </div>
+        <div class="pejabat-info">
+          <h4 class="pejabat-role one-line" title="Kepala Kantor Kementerian Agama Kab. Indramayu">
+            Kepala Seksi Penyelenggaraan Haji Dan Umrah
+          </h4>
+          <!-- <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">Drs. H. EFFENDY, M.H.I</h5> -->
+          <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">Drs. H. EFFENDY, M.H.I</h5>
+          <h5 class="pejabat-nip one-line" title="NIP: 197611222006041009">NIP: 196809152002121001</h5>
+        </div>
+      </article>
+
+
+      <!-- Pejabat 3 -->
+      <article class="pejabat-card">
+        <div class="pejabat-photo">
+          <img src="../assets/images/pejabat/6.png" alt="Kepala Kantor">
+        </div>
+        <div class="pejabat-info">
+          <h4 class="pejabat-role one-line" title="Kepala Kantor Kementerian Agama Kab. Indramayu">
+            Kepala Seksi Bimas Islam
+          </h4>
+          <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">H. ROSIDI, S,Ag., MM</h5>
+          <h5 class="pejabat-nip one-line" title="NIP: 197611222006041009">NIP: 196812301994031003</h5>
+        </div>
+      </article>
+
+      <!-- Pejabat 3 -->
+      <article class="pejabat-card">
+        <div class="pejabat-photo">
+          <img src="../assets/images/pejabat/7.png" alt="Kepala Kantor">
+        </div>
+        <div class="pejabat-info">
+          <h4 class="pejabat-role one-line" title="Kepala Kantor Kementerian Agama Kab. Indramayu">
+            Penyelenggara Zakat Wakaf
+          </h4>
+          <!-- <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">HH. MUHAMMAD AMIN, SE., M.Si</h5> -->
+          <h5 class="pejabat-name one-line" title="AGHUTS MUHAIMIN">H. MUHAMMAD AMIN, SE., M.Si</h5>
+          <h5 class="pejabat-nip one-line" title="NIP: 197611222006041009">NIP: 197304162011011001</h5>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
 
 
   <footer id="newsletter">
@@ -350,7 +455,8 @@
         }
       });
  </script>
-  
+
+
 
 
 <script>
