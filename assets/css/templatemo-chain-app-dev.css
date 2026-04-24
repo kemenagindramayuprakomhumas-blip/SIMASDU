@@ -1080,6 +1080,58 @@ Services Style
   color: #fff;
 }
 
+.anak-service .icon {
+  width: 100px;
+  height: 100px;
+  background-image: url('../images/dataanak.avif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.anak-service:hover .icon {
+  background-image: url('../images/dataanak.avif');
+}
+
+.pasturi-service .icon {
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;  
+  background-image: url(../images/datapasturi.avif);
+}
+
+.pasturi-service:hover .icon {
+  background-image: url(../images/datapasturi.avif);
+}
+
+.gaji-service .icon {
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;    
+  background-image: url(../images/datagaji.avif);
+}
+
+.gaji-service:hover .icon {
+  background-image: url(../images/datagaji.avif);
+}
+
+.pensiun-service .icon {
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;    
+  background-image: url(../images/datapensiun.avif);
+}
+
+.pensiun-service:hover .icon {
+  background-image: url(../images/datapensiun.avif);
+}
+
 .first-service .icon {
   width: 100px;
   height: 50px;
@@ -2971,5 +3023,7 @@ responsive
   /* caret tidak diperlukan saat selalu terbuka */
   .nav .dropdown .fa-caret-down { display: none; }
 }
+
+
 
 
