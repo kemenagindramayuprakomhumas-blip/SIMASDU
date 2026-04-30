@@ -51,6 +51,62 @@
       }
     </style>
 
+    <style>
+      /* popup button style */
+        /* Container modal */
+        .custom-modal {
+          border-radius: 16px;
+          border: none;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+          overflow: hidden;
+        }
+
+        /* Header lebih clean */
+        .modal-header {
+          background: linear-gradient(135deg, #e8f5e9, #ffffff);
+        }
+
+        /* Tombol survei */
+        .btn-survei {
+          background: linear-gradient(135deg, #2e7d32, #43a047);
+          color: white;
+          padding: 12px;
+          border-radius: 10px;
+          font-weight: 500;
+          transition: 0.3s;
+        }
+
+        .btn-survei:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 5px 15px rgba(46,125,50,0.3);
+        }
+
+        /* Tombol pengaduan */
+        .btn-pengaduan {
+          background: linear-gradient(135deg, #c62828, #e53935);
+          color: white;
+          padding: 12px;
+          border-radius: 10px;
+          font-weight: 500;
+          transition: 0.3s;
+        }
+
+        .btn-pengaduan:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 5px 15px rgba(198,40,40,0.3);
+        }
+
+        /* Animasi muncul */
+        .modal.fade .modal-dialog {
+          transform: scale(0.9);
+          transition: all 0.3s ease;
+        }
+
+        .modal.show .modal-dialog {
+          transform: scale(1);
+        }
+    </style>
+
   </head>
   
 
@@ -165,6 +221,7 @@
       </div>
       
 <div class="row">
+
   <!-- 1 -->
   <div class="col-12 col-sm-6 col-lg-3 d-flex col-card" style="margin: 20px 0;">
     <div class="service-item umum-service h-100 d-flex flex-column w-100">
@@ -172,7 +229,13 @@
       <h4>Sub Bagian Perencanaan &amp; Umum</h4>
       <p>Mengelola perencanaan, ketatausahaan, dan urusan umum di lingkungan Kemenag Indramayu.</p>
       <div class="text-button mt-auto">
-        <a href="https://forms.gle/hiWSyvAQWFbGdGyX8">Isi Pengaduan & Survei <i  class="fa fa-arrow-right"></i></a>
+        <a href="#" class="btn-popup"
+           data-judul="Sub Bagian Perencanaan & Umum"
+           data-survei="https://forms.gle/hiWSyvAQWFbGdGyX8"
+           data-pengaduan="https://forms.gle/pVr6xA3jbFoGH8V29"
+           data-bs-toggle="modal" data-bs-target="#popupLayanan">
+           Isi Pengaduan & Survei <i class="fa fa-arrow-right"></i>
+        </a>
       </div>
     </div>
   </div>
@@ -184,7 +247,13 @@
       <h4>Sub Bagian Kepegawaian</h4>
       <p>Mengatur administrasi kepegawaian, mutasi, dan pembinaan ASN di Kemenag Indramayu.</p>
       <div class="text-button mt-auto">
-        <a href="https://forms.gle/foofskjpbKabARHW9">Isi Pengaduan & Survei <i  class="fa fa-arrow-right"></i></a>
+        <a href="#" class="btn-popup"
+           data-judul="Sub Bagian Kepegawaian"
+           data-survei="https://forms.gle/foofskjpbKabARHW9"
+           data-pengaduan="https://forms.gle/pVr6xA3jbFoGH8V29"
+           data-bs-toggle="modal" data-bs-target="#popupLayanan">
+           Isi Pengaduan & Survei <i class="fa fa-arrow-right"></i>
+        </a>
       </div>
     </div>
   </div>
@@ -196,7 +265,13 @@
       <h4>Sub Bagian Keuangan</h4>
       <p>Mengelola anggaran, pelaporan keuangan, dan belanja operasional instansi.</p>
       <div class="text-button mt-auto">
-        <a href="https://forms.gle/aTNJfcz64BALg6V88">Isi Pengaduan & Survei <i  class="fa fa-arrow-right"></i></a>
+        <a href="#" class="btn-popup"
+           data-judul="Sub Bagian Keuangan"
+           data-survei="https://forms.gle/aTNJfcz64BALg6V88"
+           data-pengaduan="https://forms.gle/pVr6xA3jbFoGH8V29"
+           data-bs-toggle="modal" data-bs-target="#popupLayanan">
+           Isi Pengaduan & Survei <i class="fa fa-arrow-right"></i>
+        </a>
       </div>
     </div>
   </div>
@@ -208,7 +283,13 @@
       <h4>Seksi Pendidikan Madrasah</h4>
       <p>Menyelenggarakan pembinaan dan layanan pendidikan madrasah.</p>
       <div class="text-button mt-auto">
-        <a href="https://forms.gle/fBag3ETrquKVthJm7">Isi Pengaduan & Survei <i  class="fa fa-arrow-right"></i></a>
+        <a href="#" class="btn-popup"
+           data-judul="Seksi Pendidikan Madrasah"
+           data-survei="https://forms.gle/fBag3ETrquKVthJm7"
+           data-pengaduan="https://forms.gle/pVr6xA3jbFoGH8V29"
+           data-bs-toggle="modal" data-bs-target="#popupLayanan">
+           Isi Pengaduan & Survei <i class="fa fa-arrow-right"></i>
+        </a>
       </div>
     </div>
   </div>
@@ -220,7 +301,13 @@
       <h4>Seksi Pendidikan Diniyah &amp; Pontren</h4>
       <p>Mengelola pendidikan diniyah, pesantren, dan lembaga keagamaan nonformal.</p>
       <div class="text-button mt-auto">
-        <a href="https://forms.gle/eHzs7KYB4rGx4pJf6">Isi Pengaduan & Survei <i  class="fa fa-arrow-right"></i></a>
+        <a href="#" class="btn-popup"
+           data-judul="Seksi PD Pontren"
+           data-survei="https://forms.gle/eHzs7KYB4rGx4pJf6"
+           data-pengaduan="https://forms.gle/pVr6xA3jbFoGH8V29"
+           data-bs-toggle="modal" data-bs-target="#popupLayanan">
+           Isi Pengaduan & Survei <i class="fa fa-arrow-right"></i>
+        </a>
       </div>
     </div>
   </div>
@@ -232,47 +319,55 @@
       <h4>Seksi Pendidikan Agama Islam</h4>
       <p>Penyelenggaraan pendidikan agama Islam pada sekolah umum.</p>
       <div class="text-button mt-auto">
-        <a href="https://forms.gle/p9uvkGtxkRLUnah86">Isi Pengaduan & Survei <i  class="fa fa-arrow-right"></i></a>
+        <a href="#" class="btn-popup"
+           data-judul="Seksi PAI"
+           data-survei="https://forms.gle/p9uvkGtxkRLUnah86"
+           data-pengaduan="https://forms.gle/pVr6xA3jbFoGH8V29"
+           data-bs-toggle="modal" data-bs-target="#popupLayanan">
+           Isi Pengaduan & Survei <i class="fa fa-arrow-right"></i>
+        </a>
       </div>
     </div>
   </div>
 
   <!-- 7 -->
-  <!-- <div class="col-12 col-sm-6 col-lg-3 d-flex col-card" style="margin: 20px 0;">
-    <div class="service-item phu-service h-100 d-flex flex-column w-100">
-      <div class="icon"></div>
-      <h4>Seksi Penyelenggaraan Haji &amp; Umroh</h4>
-      <p>Pelayanan dan pembinaan bagi jamaah haji dan umrah Kabupaten Indramayu.</p>
-      <div class="text-button mt-auto">
-        <a href="phu.html">Isi Pengaduan & Survei <i  class="fa fa-arrow-right"></i></a>
-      </div>
-    </div>
-  </div> -->
-
-  <!-- 8 -->
   <div class="col-12 col-sm-6 col-lg-3 d-flex col-card" style="margin: 20px 0;">
     <div class="service-item bimas-service h-100 d-flex flex-column w-100">
       <div class="icon"></div>
       <h4>Seksi Bimas Islam</h4>
       <p>Menangani pembinaan dan layanan bagi penyuluh serta lembaga keagamaan Islam.</p>
       <div class="text-button mt-auto">
-        <a href="https://forms.gle/9SkK94rLkVMtKiLa8">Isi Pengaduan & Survei <i  class="fa fa-arrow-right"></i></a>
+        <a href="#" class="btn-popup"
+           data-judul="Seksi Bimas Islam"
+           data-survei="https://forms.gle/9SkK94rLkVMtKiLa8"
+           data-pengaduan="https://forms.gle/pVr6xA3jbFoGH8V29"
+           data-bs-toggle="modal" data-bs-target="#popupLayanan">
+           Isi Pengaduan & Survei <i class="fa fa-arrow-right"></i>
+        </a>
       </div>
     </div>
   </div>
 
-  <!-- 9 -->
+  <!-- 8 -->
   <div class="col-12 col-sm-6 col-lg-3 d-flex col-card" style="margin: 20px 0;">
     <div class="service-item pzw-service h-100 d-flex flex-column w-100">
       <div class="icon"></div>
       <h4>Penyelenggara Zakat &amp; Wakaf</h4>
       <p>Mengelola kebijakan dan pembinaan pengelolaan zakat dan wakaf di daerah.</p>
       <div class="text-button mt-auto">
-        <a href="https://forms.gle/GAMLd3ZX2sGJTZHT7">Isi Pengaduan & Survei <i  class="fa fa-arrow-right"></i></a>
+        <a href="#" class="btn-popup"
+           data-judul="Penyelenggara Zakat & Wakaf"
+           data-survei="https://forms.gle/GAMLd3ZX2sGJTZHT7"
+           data-pengaduan="https://forms.gle/pVr6xA3jbFoGH8V29"
+           data-bs-toggle="modal" data-bs-target="#popupLayanan">
+           Isi Pengaduan & Survei <i class="fa fa-arrow-right"></i>
+        </a>
       </div>
     </div>
   </div>
+
 </div>
+
     </div><!-- /container -->
   </div><!-- /services -->
 
@@ -287,6 +382,41 @@
       </div>
     </div>
   </footer>
+
+
+  <!--  tombol popup -->
+<div class="modal fade" id="popupLayanan" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-modal text-center">
+
+      <!-- Header -->
+      <div class="modal-header border-0 pb-0">
+        <h5 id="judulModal" class="modal-title w-100 fw-bold text-success"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Body -->
+      <div class="modal-body pt-2">
+        <p class="text-muted mb-4">
+          Silakan pilih jenis layanan yang ingin Anda akses
+        </p>
+
+        <div class="d-grid gap-3">
+
+          <a id="btnSurvei" href="#" target="_blank" class="btn btn-survei">
+            <i class="fa fa-clipboard-list me-2"></i> Isi Survei
+          </a>
+
+          <a id="btnPengaduan" href="#" target="_blank" class="btn btn-pengaduan">
+            <i class="fa fa-bullhorn me-2"></i> Isi Pengaduan
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 
 <script>
@@ -336,6 +466,18 @@
       }
     });
   })(jQuery);
+</script>
+
+<script>
+document.querySelectorAll('.btn-popup').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+
+    document.getElementById('btnSurvei').href = this.dataset.survei;
+    document.getElementById('btnPengaduan').href = this.dataset.pengaduan;
+    document.getElementById('judulModal').innerText = this.dataset.judul;
+
+  });
+});
 </script>
 
 <script>
