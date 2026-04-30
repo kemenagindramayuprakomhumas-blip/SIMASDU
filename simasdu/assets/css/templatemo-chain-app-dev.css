@@ -2368,7 +2368,7 @@ responsive
 /* ==== SIGAP Banner ==== */
 
 .sigap-banner {
-  background: url('../images/slider-sigap2-dec.png') center center no-repeat;
+  background: url('../images/slider-sigap2-dec.avif') center center no-repeat;
   background-size: cover;
   padding: 150px 100px 150px 100px;
   position: relative;
@@ -2587,7 +2587,7 @@ responsive
    SOROTAN IG - gaya selaras dengan SIGAP banner
    ============================================================ */
 .ig-highlight {
-  background: url('../images/slider-sigap2-dec.png') center center no-repeat;
+  background: url('../images/slider-sigap2-dec.avif') center center no-repeat;
   background-size: cover;
   padding: 220px 100px 150px 100px;
   position: relative;
