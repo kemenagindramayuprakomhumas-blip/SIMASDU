@@ -49,6 +49,189 @@
         }
       }
     </style>
+<style>
+.sigap-section{
+  background: #ffffff;
+  padding: 80px 20px;
+}
+
+/* CONTAINER */
+.sigap-container{
+  max-width: 1450px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+  flex-wrap: wrap;
+}
+
+/* MASKOT TANPA CARD */
+.sigap-image{
+  flex: 1;
+  text-align: center;
+
+  padding: 20px;
+
+  transition: 0.3s ease;
+}
+
+.sigap-image:hover{
+  transform: translateY(-5px);
+}
+
+.sigap-image img{
+  width: 470px;
+  max-width: 100%;
+  transition: 0.3s ease;
+}
+
+.sigap-image img:hover{
+  transform: scale(1.03);
+}
+
+/* CARD KONTEN */
+.sigap-content{
+  flex: 1.5;
+  text-align: center;
+
+  background: #ffffff;
+
+  border: 4px solid #4da6ff;
+
+  border-radius: 40px;
+
+  padding: 45px 35px;
+
+  box-shadow:
+    0 10px 30px rgba(77,166,255,0.12),
+    0 0 0 8px rgba(77,166,255,0.06);
+
+  transition: 0.3s ease;
+}
+
+.sigap-content:hover{
+  transform: translateY(-5px);
+}
+
+/* JUDUL */
+.sigap-content h1{
+  font-size: 82px;
+  line-height: 1;
+  font-weight: 900;
+  color: #1453b8;
+  margin-bottom: 10px;
+  font-family: serif;
+}
+
+/* DESKRIPSI */
+.sigap-content p{
+  font-size: 24px;
+  font-weight: 600;
+  color: #3d4b63;
+  margin-bottom: 40px;
+}
+
+/* BUTTON */
+.sigap-buttons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+.sigap-buttons a{
+  text-decoration: none;
+
+  padding: 14px 30px;
+  min-width: 240px;
+
+  border-radius: 50px;
+  border: 3px solid #4da6ff;
+
+  background: #ffffff;
+  color: #1453b8;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 4px 12px rgba(77,166,255,0.10);
+}
+
+.sigap-buttons a:hover{
+  background: linear-gradient(135deg, #4da6ff, #5ec2ff);
+  color: #ffffff;
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 10px 20px rgba(77,166,255,0.25);
+}
+
+/* RESPONSIVE TABLET */
+@media (max-width: 992px){
+
+  .sigap-container{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .sigap-content{
+    width: 100%;
+  }
+
+  .sigap-image img{
+    width: 340px;
+  }
+
+  .sigap-content h1{
+    font-size: 64px;
+  }
+
+  .sigap-content p{
+    font-size: 20px;
+  }
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 768px){
+
+  .sigap-section{
+    padding: 60px 15px;
+  }
+
+  .sigap-content{
+    border-radius: 28px;
+    padding: 28px 18px;
+  }
+
+  .sigap-image img{
+    width: 260px;
+  }
+
+  .sigap-content h1{
+    font-size: 48px;
+  }
+
+  .sigap-content p{
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  .sigap-buttons{
+    gap: 14px;
+  }
+
+  .sigap-buttons a{
+    min-width: 100%;
+    font-size: 15px;
+    padding: 13px 20px;
+  }
+}  
+</style>
 
   </head>
   
@@ -221,6 +404,32 @@
       </div>
     </div>
   </div> 
+
+<section class="sigap-section">
+  <div class="sigap-container">
+
+    <!-- Maskot -->
+    <div class="sigap-image">
+      <img src="assets/images/sigap1.avif" alt="Maskot SIGAP">
+    </div>
+
+    <!-- Konten -->
+    <div class="sigap-content">
+      <h1>SIGAP</h1>
+      <p>(Sistem Informasi Kemenag Aktif dan Produktif)</p>
+
+      <div class="sigap-buttons">
+        <a href="#">Sosial Media</a>
+        <a href="#">Profil, Visi & Misi</a>
+        <a href="#">Informasi KUA</a>
+        <a href="#">Struktur Organisasi</a>
+        <a href="#">Informasi Wakaf</a>
+        <a href="#">Informasi Madrasah</a>
+      </div>
+    </div>
+
+  </div>
+</section>  
 
   <!-- ***** Services (Cards) ***** -->
   <div id="services" class="services section">
@@ -454,8 +663,8 @@ if (nav) {
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
 
-  <a href="https://wa.me/6281220007516?text=Assalamualaikum%20Warahmatullahi%20Wabarakatuh%20Hi%20Admin%20SIGAP%2C%0APerkenalkan%20saya%0ANama%20%3A%20%0Aingin%20bertanya
-" target="_blank" class="floating-btn">
+  <!-- <a href="https://wa.me/6281220007516?text=Assalamualaikum%20Warahmatullahi%20Wabarakatuh%20Hi%20Admin%20SIGAP%2C%0APerkenalkan%20saya%0ANama%20%3A%20%0Aingin%20bertanya" target="_blank" class="floating-btn"> -->
+  <a href="" target="_blank" class="floating-btn">
     <img src="assets/images/askme.avif" alt="Ask Me" />
   </a>
 </body>
